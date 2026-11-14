@@ -1,9 +1,17 @@
 // Captures de la section « étalement vu du ciel » (serveur local déjà lancé sur le port donné).
-// Usage : node tests/capture_etalement.mjs <port ou adresse du site> <dossier de sortie> [code]
+// Usage : node tests/outils/capture_etalement.mjs <port ou adresse du site> <dossier de sortie> [code]
 import { chromium } from 'playwright-core';
 
 const [port = '8766', sortie = '.', code = '92142'] = process.argv.slice(2);
-const nav = await chromium.launch({ channel: process.env.NAVIGATEUR || 'msedge', headless: true });
+// Chrome d'abord : depuis novembre 2026, Edge ne démarre plus en mode headless avec playwright-core 1.48.
+async function lanceNavigateur() {
+  let erreur;
+  for (const channel of process.env.NAVIGATEUR ? [process.env.NAVIGATEUR] : ['chrome', 'msedge']) {
+    try { return await chromium.launch({ channel, headless: true }); } catch (e) { erreur = e; }
+  }
+  throw erreur;
+}
+const nav = await lanceNavigateur();
 const erreurs = [];
 for (const [nom, vue, theme, langue] of [['bureau', { width: 1440, height: 1000 }, 'light', 'fr'], ['telephone', { width: 390, height: 844 }, 'light', 'fr'], ['sombre-en', { width: 1440, height: 1000 }, 'dark', 'en']]) {
   const ctx = await nav.newContext({ viewport: vue, deviceScaleFactor: 1 });

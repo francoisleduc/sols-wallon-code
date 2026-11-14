@@ -2,7 +2,7 @@
 % ---------------------------------------------------------------------------
 % Rapport : suivi de l'artificialisation des sols en Wallonie au regard du SDT 2024.
 % Tous les chiffres proviennent de generated/chiffres.tex et generated/tab_*.tex,
-% régénérés par `python src/run_all.py`. Ne pas saisir de valeur à la main.
+% régénérés par `python src/construire_rapport.py`. Ne pas saisir de valeur à la main.
 % ---------------------------------------------------------------------------
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -97,7 +97,7 @@
 \textbf{Date} & \DateGeneration \\
 \textbf{Auteur(s)} & [à compléter] \\
 \textbf{Statut} & Document de travail, ouvert à la discussion \\
-\textbf{Code et données} & chaîne reproductible \fichier{src/run\_all.py} (annexe~\ref{ann:repro}) \\
+\textbf{Code et données} & chaîne reproductible \fichier{src/construire\_rapport.py} (annexe~\ref{ann:repro}) \\
 \end{tabular}
 \vspace{1cm}
 
@@ -300,7 +300,7 @@ La correspondance est obtenue par requête automatisée sur le service ArcGIS RE
 \label{ch:methode}
 
 \section{Chaîne de traitement}
-La chaîne (\fichier{python src/run\_all.py}) enchaîne cinq étapes~: (1)~correspondance communes-bassins (API SPW)~; (2)~téléchargement du SDT et numérisation de ses graphiques~; (3)~téléchargement du registre cadastral et calculs~; (4)~figures~; (5)~génération des chiffres et tableaux du présent document. Chaque téléchargement est journalisé (URL, date, taille, SHA-256) dans \fichier{data/raw/PROVENANCE.json}. L'ensemble s'exécute en moins d'une minute à partir du cache.
+La chaîne (\fichier{python src/construire\_rapport.py}) enchaîne cinq étapes~: (1)~correspondance communes-bassins (API SPW)~; (2)~téléchargement du SDT et numérisation de ses graphiques~; (3)~téléchargement du registre cadastral et calculs~; (4)~figures~; (5)~génération des chiffres et tableaux du présent document. Chaque téléchargement est journalisé (URL, date, taille, SHA-256) dans \fichier{data/raw/PROVENANCE.json}. L'ensemble s'exécute en moins d'une minute à partir du cache.
 
 \section{Reconstitution des trajectoires du SDT}
 \label{sec:numerisation}
@@ -765,10 +765,10 @@ Les indicateurs se répartissent en trois groupes.
 \begin{verbatim}
 python -m venv .venv
 .venv/Scripts/python.exe -m pip install -r requirements.txt
-.venv/Scripts/python.exe src/run_all.py --refresh
+.venv/Scripts/python.exe -X utf8 src/construire_rapport.py --refresh
 latexmk -pdf -cd report/rapport.tex
 \end{verbatim}
-\paragraph{Organisation du code} \fichier{src/artif/config.py} (paramètres et choix), \fichier{sources.py} (téléchargement et provenance), \fichier{communes.py} (API SPW), \fichier{sdt.py} (numérisation), \fichier{cpdt.py} (lecture des graphiques vectoriels de la CPDT), \fichier{cadastre.py} (stocks et flux), \fichier{suivi.py} (trajectoires, sauts), \fichier{analyse.py} (validation, sensibilité), \fichier{figures.py}, \fichier{rapport.py} (chiffres et tableaux de ce document). Version de Python~: \PythonVersion.
+\paragraph{Organisation du code} \fichier{src/artif/config.py} (paramètres et choix), \fichier{sources.py} (téléchargement et provenance)~; dans \fichier{referentiels/}, \fichier{communes.py} (API SPW) et \fichier{sdt.py} (numérisation)~; dans \fichier{rapport/}, \fichier{cpdt.py} (lecture des graphiques vectoriels de la CPDT), \fichier{cadastre.py} (stocks et flux), \fichier{suivi.py} (trajectoires, sauts), \fichier{analyse.py} (validation, sensibilité), \fichier{figures.py}, \fichier{latex.py} (chiffres et tableaux de ce document). Version de Python~: \PythonVersion.
 \paragraph{Fichiers produits} \fichier{data/processed/}~: stocks et consommations annuels par commune, suivi des communes et des bassins, validation, sensibilité, variabilité, composition, comparaison avec la CPDT (\fichier{comparaison\_cpdt\_bassins.csv}).
 \paragraph{Provenance des données} Chaque téléchargement est consigné avec son URL, sa date, sa taille et son empreinte SHA-256 (tableau~\ref{tab:provenance})~; une nouvelle exécution avec \fichier{--refresh} met ce journal à jour.
 \begin{table}[H]

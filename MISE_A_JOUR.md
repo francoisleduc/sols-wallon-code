@@ -20,7 +20,8 @@ Les plans parcellaires et les photos ne se retéléchargent **pas** chaque anné
 
 - **Environnement.** Windows, Python dans `.venv/` (installer avec `requirements.txt`), Node.js avec `npm install --prefix tests`, Chrome pour les tests.
   - Lancer Python avec `-X utf8`.
-  - Lancer l'audit de l'affichage avec `NAVIGATEUR=chrome` : Edge ne démarre plus en mode headless avec playwright-core 1.48.
+  - L'audit de l'affichage prend Chrome, et Edge à défaut : Edge ne démarre plus en mode headless avec playwright-core 1.48.
+  - Les tests unitaires (`python -m unittest discover -s tests/unitaires`) tournent en une seconde : les lancer après toute modification du code. Les familles de tests sont décrites dans `tests/README.md`.
 - **Réseau.** Sur un réseau qui intercepte TLS (proxy d'entreprise, antivirus) :
   - régler Git avec `http.sslBackend=schannel` ;
   - lancer npm avec `NODE_OPTIONS=--use-system-ca`.
@@ -49,24 +50,24 @@ C'est la mise à jour principale. Exemple : ajouter la situation au 1er janvier 
 ### 2.2 Relancer la chaîne
 
 ```bash
-.venv/Scripts/python.exe -X utf8 src/run_all.py --refresh
+.venv/Scripts/python.exe -X utf8 src/construire_rapport.py --refresh
 ```
 
 ```bash
-.venv/Scripts/python.exe -X utf8 src/build_portail.py --refresh
+.venv/Scripts/python.exe -X utf8 src/construire_portail.py --refresh
 ```
 
-- `run_all.py --refresh` retélécharge toutes les sources du rapport :
+- `construire_rapport.py --refresh` retélécharge toutes les sources du rapport :
   - Statbel, pour les superficies de `data/processed/` dont le portail a besoin ;
   - les PDF du SDT et de la CPDT ;
   - la liste des communes par bassin (deux requêtes à l'API du SPW).
 
   Il réécrit `references/communes_bassins_sdt.csv` et `references/trajectoires_sdt_2024_bassins.csv`. Le dossier du projet n'est pas sous git : copier ces deux fichiers avant de lancer, puis vérifier qu'ils n'ont pas bougé. S'ils ont bougé, comprendre pourquoi avant de continuer : nouvelle version du SDT, ou changement de communes.
-- `build_portail.py --refresh` :
+- `construire_portail.py --refresh` :
   - cherche l'année suivante au SPF et la met en cache dans `data/raw/spf_occupation_sol/` ;
   - retélécharge l'IWEPS ;
   - régénère `portail/data/` ;
-  - lance l'audit des données (`tests/verifier_donnees.py`).
+  - lance l'audit des données (`tests/audit/verifier_donnees.py`).
 - Chaque téléchargement est noté dans `data/raw/PROVENANCE.json` (adresse, date, taille, SHA-256).
 
 ### 2.3 Ce qui se met à jour seul
@@ -84,7 +85,7 @@ C'est la mise à jour principale. Exemple : ajouter la situation au 1er janvier 
 |---|---|---|
 | Nature inconnue | Le SPF a créé une nouvelle nature cadastrale | La classer dans `references/test_spf_iweps/table_natures_categories.csv`, selon la méthode de `references/test_spf_iweps/README.md`. Si elle est citée dans une phrase, ajouter sa traduction dans `NATURES_EN` (`portail.py`) |
 | `communes inconnues` | Fusion ou nom de commune modifié | Voir [la section 6](#6-si-des-communes-fusionnent) |
-| `reclassement de référence perdu` | Les cas de référence de `build_portail.py` (Grâce-Hollogne 2025 et 2018, Seraing 2015) ne sont plus détectés | Comprendre pourquoi avant de toucher aux seuils (en tête de `portail.py`) : la page Méthode s'appuie sur ces cas |
+| `reclassement de référence perdu` | Les cas de référence de `src/artif/portail/controles.py` (Grâce-Hollogne 2025 et 2018, Seraing 2015) ne sont plus détectés | Comprendre pourquoi avant de toucher aux seuils (dans `src/artif/portail/parametres.py`) : la page Méthode s'appuie sur ces cas |
 | `écart moyen avec l'IWEPS trop élevé` | L'estimation s'éloigne de l'IWEPS de plus de 0,05 point | Chercher une nature mal classée ou un changement de format chez le SPF |
 | Écart dans l'audit des données | Un chiffre publié ne correspond plus au recalcul indépendant | Lire le message. Ne pas publier tant qu'il reste un écart |
 
@@ -92,20 +93,20 @@ C'est la mise à jour principale. Exemple : ajouter la situation au 1er janvier 
 
 - **Les chiffres écrits à la main dans la page Méthode** (`portail/assets/app.js`, section Méthode) : le test de reproduction du 7 novembre 2026 et la comparaison avec la fiche T005 de l'IWEPS.
   - Ils décrivent un test daté et restent vrais tels quels.
-  - Si l'IWEPS publie une nouvelle fiche T005, on peut mettre à jour `T005` dans `tests/verifier_donnees.py` et la phrase de la Méthode ensemble. Le test vérifie qu'ils concordent.
+  - Si l'IWEPS publie une nouvelle fiche T005, on peut mettre à jour `T005` dans `tests/audit/verifier_donnees.py` et la phrase de la Méthode ensemble. Le test vérifie qu'ils concordent.
 - **Le ton.** Si un bassin change de situation, les textes s'adaptent seuls. Garder la règle : la trajectoire est un repère, pas une autorisation. Pas de verdict par commune, pas de classement.
 - **L'exemple de la Méthode** (Grâce-Hollogne, choisi pour son reclassement de 2025) se recalcule seul : vérifier qu'il reste parlant.
 
 ### 2.6 Vérifier et publier
 
 ```bash
-NAVIGATEUR=chrome node tests/verifier_affichage.mjs
+node tests/audit/verifier_affichage.mjs
 ```
 
-1. Les deux audits doivent finir à 0 écart. L'audit des données tourne déjà dans `build_portail.py`. Celui de l'affichage prend environ 5 minutes et contrôle les 261 fiches en français et en anglais.
+1. Les deux audits doivent finir à 0 écart. L'audit des données tourne déjà dans `construire_portail.py`. Celui de l'affichage prend environ 5 minutes et contrôle les 261 fiches en français et en anglais.
 2. Regarder le site en local : accueil, un bassin, une fiche, la Méthode.
    - Lancer un serveur avec `npx --yes http-server@14.1.1 portail -p 8765 -a localhost -c-1`.
-   - Ou prendre des captures avec `node tests/capture_etalement.mjs`.
+   - Ou prendre des captures avec `node tests/outils/capture_etalement.mjs`.
 3. Committer dans le dépôt du site, avec la ligne `Co-Authored-By` si un agent a travaillé :
    ```bash
    git -C portail add -A
@@ -136,57 +137,55 @@ Le curseur de l'étalement va de 2018 à la dernière orthophoto déclarée dans
    - Chercher « 2026 » dans ces fichiers.
 5. **Lancer l'audit de l'affichage.** Le bloc `photos-direct` lit la dernière année sur le curseur. Si le nouveau vol est partiel, ce contrôle échoue exprès : vérifier le rendu à l'œil, puis adapter le contrôle.
 
-La version artifact Claude ne peut pas lire les images d'autres sites : elle utilise les photos téléchargées par `src/photos_etalement.py` (Gembloux seulement). Il faut y ajouter l'année dans `ANNEES` et relancer, sans dépasser une commune.
+La version artifact Claude ne peut pas lire les images d'autres sites : elle utilise les photos téléchargées par `src/outils/photos_artifact.py` (Gembloux seulement). Il faut y ajouter l'année dans `ANNEES` et relancer, sans dépasser une commune.
 
 ## 4. Étalement vu du ciel
 
-Cette section ne dépend pas du calendrier annuel. Elle sert dans deux cas :
-
-- le SPW publie une nouvelle carte WalOUS des changements, par exemple 2023-2026 ;
-- on étend le pilote (3 communes) aux 261 communes.
+Cette section ne dépend pas du calendrier annuel. Elle sert quand le SPW publie une nouvelle carte WalOUS des changements (par exemple 2023-2026), ou pour tout recalculer.
 
 ### 4.1 Les données nécessaires
 
-| Donnée | Producteur | Taille | Où la mettre |
+Tout se télécharge d'un bloc. Le calcul ne fait plus de requête par commune (décision du 14 novembre 2026).
+
+| Donnée | Source | Taille | Où la mettre |
 |---|---|---|---|
-| WalOUS, changements 2018-2023, raster 1 m | SPW, CC BY 4.0, [fiche](https://geodata.wallonie.be/id/03300ff8-5e1d-430d-876a-ffd1b9103e78) | 1,1 Go | `data/raw/spw_walous/cha_2018_2023/` (déjà là) |
-| Plan parcellaire au 1er janvier 2025, par commune | SPF Finances, flux ATOM `https://opendata.fin.belgium.be/download/ATOM/64594d51-71dc-11eb-916d-3448ed25ad7c-fr.xml` (fichiers `PP-FiscSit_20250101_shp_31370_<INS>_<Nom>.zip`) | 2,1 Go pour les 261 communes | `data/raw/spf_plan_parcellaire/` |
-| Plan de secteur | SPW, CC BY 4.0, aujourd'hui lu par requêtes au service `AMENAGEMENT_TERRITOIRE/PDS` | requêtes par commune | `data/raw/spw_pilote/` |
-| Centralités du SDT | SPW, CC BY 4.0, aujourd'hui lues par requêtes au service `AMENAGEMENT_TERRITOIRE/CENTRALITES` | requêtes par commune | `data/raw/spw_pilote/` |
-| Datation 2019 et 2020 | SPW, aujourd'hui lue par images aux services `SOL_SOUS_SOL/WAL_OCS_IA__CHA_18_19` et `__CHA_18_20` | environ 50 images par commune | `data/raw/spw_pilote/walous/` |
+| WalOUS, changements 2018-2023, raster 1 m | SPW, CC BY 4.0, [fiche](https://geodata.wallonie.be/id/03300ff8-5e1d-430d-876a-ffd1b9103e78) | 1,1 Go | `data/raw/spw_walous/cha_2018_2023/` |
+| WalOUS 2019, raster 1 m | SPW, CC BY 4.0, `https://geoservices.wallonie.be/geotraitement/spwdatadownload/results/86462606-4a21-49c8-ab9e-564ccba681b7/WAL_OCS_IA__2019_GEOTIFF_3812.zip` | 724 Mo | `data/raw/spw_walous/ocs_2019/` (décompressé) |
+| WalOUS 2020, raster 1 m | SPW, CC BY 4.0, `https://geoservices.wallonie.be/geotraitement/spwdatadownload/results/47b348f1-6e7a-4baa-963c-0232a43c0cff/WAL_OCS_IA__2020_GEOTIFF_3812.zip` | 728 Mo | `data/raw/spw_walous/ocs_2020/` (décompressé) |
+| Plan de secteur et centralités du SDT, toute la Wallonie | SPW, CC BY 4.0, services `AMENAGEMENT_TERRITOIRE/PDS` (couche 22) et `CENTRALITES` (couche 0), lus page par page | environ 45 requêtes, 190 Mo | `data/raw/spw_amenagement/` (fait par `couche_wallonie` dans `pilote_parcelles.py`) |
+| Plan parcellaire au 1er janvier 2025, par commune | SPF Finances, flux ATOM `https://opendata.fin.belgium.be/download/ATOM/64594d51-71dc-11eb-916d-3448ed25ad7c-fr.xml` (fichiers `PP-FiscSit_20250101_shp_31370_<INS>_<Nom>.zip`) | 2,1 Go | `data/raw/spf_plan_parcellaire/` |
 
-Le SPF ne publie le plan parcellaire que commune par commune : il n'existe pas de fichier régional. Ses fichiers sont de simples téléchargements, sans charge pour le SPW.
+Ce qu'il faut savoir sur ces sources :
 
-### 4.2 Version actuelle : par requêtes (lent)
+- **Le plan de secteur** : le SPW publie aussi un fichier INSPIRE (GML), mais il date de décembre 2022. Le service, lui, donne le plan en vigueur : on le lit donc en entier, une page à la fois.
+- **Le géopackage du SDT** ne contient pas les centralités.
+- **Le plan parcellaire** n'existe que commune par commune. Le serveur du SPF est lent (environ 1 Mo/s) et coupe parfois un fichier : vérifier chaque taille avec celle annoncée dans le flux ATOM, et réessayer. Encoder les noms accentués dans l'adresse.
 
-1. Ajouter les communes à `COMMUNES` dans `src/pilote_parcelles.py`.
-2. Télécharger leurs plans parcellaires 2025.
-3. Lancer `.venv/Scripts/python.exe -X utf8 -u src/etalement_walous.py`.
+### 4.2 Lancer le calcul
 
-Comptez environ 13 minutes par commune, surtout passées à attendre le SPW. Pour 261 communes, cela fait 2 à 3 jours de requêtes en continu : trop pour les conditions d'usage du SPW sans le prévenir.
+```bash
+.venv/Scripts/python.exe -X utf8 -u src/calculer_etalement.py
+```
 
-### 4.3 Version conseillée : par téléchargements d'un bloc (à développer)
+- Sans argument, les 261 communes sont calculées. Une commune déjà exportée est sautée : la commande reprend là où elle s'est arrêtée. `--refaire` recalcule tout.
+- Avec des codes INS (`src/calculer_etalement.py 92142 63035`), seules ces communes sont recalculées.
+- Une commune en erreur n'arrête pas les autres. La liste des erreurs est dans `data/processed/etalement/erreurs.json`.
+- Compter environ une minute par commune, soit quelques heures pour les 261.
+- `DATATION=service` reprend l'ancienne datation, par les images des services de changements 2018-2019 et 2018-2020. Elle ne sert plus que pour comparer.
 
-Le SPW publie aussi ces données en fichiers complets. Les avoir en local évite toutes les requêtes par commune.
+### 4.3 Ce que le passage aux fichiers complets a changé
 
-| Donnée | Fichier | Taille |
-|---|---|---|
-| WalOUS 2019, raster | `https://geoservices.wallonie.be/geotraitement/spwdatadownload/results/86462606-4a21-49c8-ab9e-564ccba681b7/WAL_OCS_IA__2019_GEOTIFF_3812.zip` | 724 Mo |
-| WalOUS 2020, raster | `https://geoservices.wallonie.be/geotraitement/spwdatadownload/results/47b348f1-6e7a-4baa-963c-0232a43c0cff/WAL_OCS_IA__2020_GEOTIFF_3812.zip` | 728 Mo |
-| Plan de secteur, GML INSPIRE | `https://geoservices.wallonie.be/geotraitement/spwdatadownload/get/37502a64-868e-4e3d-bf66-31ff65a24a5a/LU_PlannedLandUse_PDS.gml.zip` | environ 70 Mo |
-| SDT, dont les centralités, géopackage | flux ATOM de la fiche `bd8edf22-ca57-431d-a76f-34d4572d2953` | 6 Mo |
+Contrôle fait le 14 novembre 2026 sur les 3 anciennes communes pilotes :
 
-À faire avant de s'en servir :
+- les taches, les zones du plan de secteur et les centralités sont identiques ;
+- la datation change pour 0,9 % de la surface à Gembloux, et presque rien à Herve et à Marche-en-Famenne.
 
-1. Adapter `etalement_walous.py` et `pilote_parcelles.py` pour lire ces fichiers au lieu des services.
-2. Vérifier sur les 3 pilotes que la datation et les zones restent les mêmes. WalOUS 2019 et 2020 sont des cartes complètes, alors que les services de datation ne montrent que les changements : de petites différences sont possibles. Les mesurer et les décrire dans la Méthode.
-3. Tester que le contenu des fichiers (classes, couches) correspond bien au code.
+Cet écart vient de ce que les services de 2019 et 2020 ne montraient que les changements depuis 2018, alors que les fichiers sont des cartes complètes.
 
 ### 4.4 Après le calcul
 
 - Chaque commune produit `portail/data/etalement/<INS>.json`, d'environ 0,4 à 0,6 Mo. Pour 261 communes, cela fait environ 130 Mo dans le dépôt du site, ce qui reste sous la limite de 1 Go de GitHub Pages.
-- Relancer `build_portail.py`, puis les deux audits. Les contrôles de l'étalement portent sur chaque commune présente.
-- Les textes qui disent « trois communes pilotes » (Méthode, `portail/README.md`, `FONCTIONNALITES.md`) sont à revoir.
+- Relancer `construire_portail.py`, puis les deux audits. Les contrôles de l'étalement portent sur chaque commune présente.
 
 ### 4.5 Avec une nouvelle carte WalOUS (par exemple 2023-2026)
 
@@ -199,7 +198,7 @@ C'est un nouveau calcul, pas une simple mise à jour :
 
 ## 5. Si le SDT change
 
-- Les trajectoires par bassin sont dans `references/trajectoires_sdt_2024_bassins.csv`. Elles ont été lues sur les graphiques du SDT 2024 par `src/artif/sdt.py` (méthode : `references/trajectoires_sdt_2024_bassins.md`).
+- Les trajectoires par bassin sont dans `references/trajectoires_sdt_2024_bassins.csv`. Elles ont été lues sur les graphiques du SDT 2024 par `src/artif/referentiels/sdt.py` (méthode : `references/trajectoires_sdt_2024_bassins.md`).
 - Si la Région publie des chiffres officiels par bassin, ou un SDT révisé, il faut :
   1. remplacer ces références ;
   2. relancer les deux commandes de la section 2 ;
@@ -208,30 +207,30 @@ C'est un nouveau calcul, pas une simple mise à jour :
 
 ## 6. Si des communes fusionnent
 
-La dernière fusion wallonne est Bertogne dans Bastogne, au 1er janvier 2025. Elle est gérée par `FUSIONS` dans `portail.py`. Pour une nouvelle fusion :
+La dernière fusion wallonne est Bertogne dans Bastogne, au 1er janvier 2025. Elle est gérée par `FUSIONS` dans `src/artif/portail/parametres.py`. Pour une nouvelle fusion :
 
-1. **Rattacher l'ancienne commune.** L'ajouter à `FUSIONS` (nom de l'ancienne commune, code INS de la nouvelle). Faire de même dans `nom_vers_code` de `tests/verifier_donnees.py`.
+1. **Rattacher l'ancienne commune.** L'ajouter à `FUSIONS` (nom de l'ancienne commune, code INS de la nouvelle), et ses anciens codes INS à `IWEPS_ANCIENNES`. Faire de même dans `nom_vers_code` de `tests/audit/verifier_donnees.py`.
 2. **Mettre à jour les références.**
-   - `references/communes_bassins_sdt.csv`, construit par `src/artif/communes.py` depuis l'API du SPW.
+   - `references/communes_bassins_sdt.csv`, construit par `src/artif/referentiels/communes.py` depuis l'API du SPW.
    - Le fond de carte `references/geo/communes_wallonie.topojson`, refait depuis les secteurs statistiques de Statbel avec la commande de `references/geo/README.md`.
-3. **Changer le nombre de communes** (261), écrit dans `build_portail.py`, `tests/verifier_donnees.py` et le titre de la carte dans `app.js`.
+3. **Changer le nombre de communes** (261), écrit dans `src/artif/portail/controles.py`, `tests/audit/verifier_donnees.py` et le titre de la carte dans `app.js`.
 
 ## 7. Le rapport LaTeX
 
-`report/` est un livrable plus ancien. Il s'appuie sur Statbel, pas sur le SPF : ses chiffres diffèrent de ceux du portail. `run_all.py` régénère ses figures et ses chiffres. La compilation se fait avec `latexmk -pdf -cd report/rapport.tex`. Il n'est pas obligatoire de le tenir à jour en même temps que le site.
+`report/` est un livrable plus ancien. Il s'appuie sur Statbel, pas sur le SPF : ses chiffres diffèrent de ceux du portail. `construire_rapport.py` régénère ses figures et ses chiffres. La compilation se fait avec `latexmk -pdf -cd report/rapport.tex`. Il n'est pas obligatoire de le tenir à jour en même temps que le site.
 
 ## 8. Liste courte pour un agent
 
 1. Lire ce fichier, et `CLAUDE.md` s'il est présent.
 2. Tester l'adresse SPF de l'année en cours. Si elle répond 404, s'arrêter et le dire : rien à faire.
-3. `run_all.py --refresh`, puis `build_portail.py --refresh`. En cas d'arrêt, suivre [le tableau 2.4](#24-les-arrêts-possibles-et-quoi-faire).
+3. `construire_rapport.py --refresh`, puis `construire_portail.py --refresh`. En cas d'arrêt, suivre [le tableau 2.4](#24-les-arrêts-possibles-et-quoi-faire).
 4. Résumer ce qui a changé :
    - nouvelle année de stock ;
    - bilan des bassins, avant et après ;
    - reclassements nouvellement signalés ;
    - écart moyen avec l'IWEPS.
 5. Vérifier si une nouvelle orthophoto existe ([section 3](#3-nouvelle-orthophoto-du-spw)), et si oui, l'ajouter.
-6. Lancer `NAVIGATEUR=chrome node tests/verifier_affichage.mjs` : 0 écart exigé.
+6. Lancer `node tests/audit/verifier_affichage.mjs` : 0 écart exigé.
 7. Prendre des captures (accueil, un bassin, une fiche) et les envoyer au propriétaire.
 8. Committer dans `portail/`. **Ne pousser qu'avec l'accord explicite du propriétaire.**
 9. Mettre à jour l'en-tête « État décrit » de ce fichier et, s'il existe, la section « Où en est le projet » de `CLAUDE.md`.

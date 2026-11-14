@@ -1,6 +1,6 @@
 # Méthode du suivi communal (Wallonie)
 
-Implémentée dans le paquet `src/artif/` (voir `src/run_all.py`). Le rapport `report/rapport.pdf` détaille la méthode, la validation et la sensibilité.
+Implémentée dans le paquet `src/artif/rapport/` (voir `src/construire_rapport.py`). Le rapport `report/rapport.pdf` détaille la méthode, la validation et la sensibilité.
 
 ## Données
 

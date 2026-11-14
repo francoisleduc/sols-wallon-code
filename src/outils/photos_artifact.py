@@ -1,4 +1,4 @@
-"""Photos aériennes des communes pilotes, pour la carte de l'étalement : un fond à 2 m et des vues à 0,5 m des chantiers.
+"""Photos aériennes d'une commune pour la version artifact du site (le site public les lit en direct au SPW) : un fond à 2 m et des vues à 0,5 m des chantiers.
 
 Source : SPW, orthophotos annuelles 2018 à 2026 (CC BY 4.0), lues par le service cartographique du SPW, une requête
 à la fois et gardées en cache dans data/raw/spw_ortho/. Les conditions des services du SPW interdisent un usage
@@ -13,7 +13,8 @@ Source : SPW, orthophotos annuelles 2018 à 2026 (CC BY 4.0), lues par le servic
   manquante pour cette année : la carte montre alors le fond.
 
 Sortie : portail/data/photos/<code>/index.json et les images JPEG.
-Usage : .venv/Scripts/python.exe -X utf8 src/photos_etalement.py
+Usage : .venv/Scripts/python.exe -X utf8 src/outils/photos_artifact.py CODE_INS [CODE_INS ...]
+Une commune demande plusieurs centaines de requêtes au SPW : ne lancer que les communes utiles.
 """
 from __future__ import annotations
 
@@ -28,7 +29,7 @@ import geopandas as gpd
 import numpy as np
 from PIL import Image
 
-RACINE = Path(__file__).resolve().parent.parent
+RACINE = Path(__file__).resolve().parents[2]
 CACHE = RACINE / "data" / "raw" / "spw_ortho"
 ETAL = RACINE / "data" / "processed" / "etalement"
 PORTAIL = RACINE / "portail" / "data"
@@ -189,6 +190,8 @@ def commune(code: int) -> dict:
 
 if __name__ == "__main__":
     import sys
-    codes = [int(c) for c in sys.argv[1:]] or [92142, 63035, 83034]
+    codes = [int(c) for c in sys.argv[1:]]
+    if not codes:
+        sys.exit(__doc__)
     for c in codes:
         commune(c)

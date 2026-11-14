@@ -1,18 +1,19 @@
 // Compare ce que le navigateur affiche aux données du portail, sur les 261 fiches, en français et en anglais.
 //
 // Usage, une fois depuis la racine du projet :  npm install --prefix tests
-// Puis :                                        node tests/verifier_affichage.mjs
+// Puis :                                        node tests/audit/verifier_affichage.mjs
 //
-// Le test sert lui-même portail/ sur un port libre et pilote Edge (variable NAVIGATEUR : msedge, chrome...).
+// Le test sert lui-même portail/ sur un port libre et pilote Chrome, ou Edge à défaut (variable NAVIGATEUR pour imposer
+// l'un des deux).
 // Code de sortie 1 si un écart est trouvé. Les valeurs de portail/data/ sont contrôlées par verifier_donnees.py :
-// lancer celui-ci d'abord. Durée : moins d'une minute.
+// lancer celui-ci d'abord. Durée : quelques minutes.
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { extname, join, normalize, resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright-core';
 
-const RACINE = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const RACINE = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const SITE = join(RACINE, 'portail');
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.csv': 'text/csv', '.svg': 'image/svg+xml', '.woff2': 'font/woff2' };
 const serveur = createServer(async (req, res) => {
@@ -30,7 +31,15 @@ const base = `http://localhost:${serveur.address().port}/`;
 const ecarts = {}; const controles = {};
 const ctrl = (famille, ok, message) => { controles[famille] = (controles[famille] || 0) + 1; if (!ok) (ecarts[famille] ||= []).push(message); };
 const sp = (t) => String(t).replace(/[\s  ]+/g, ' ').trim();
-const navigateur = await chromium.launch({ channel: process.env.NAVIGATEUR || 'msedge', headless: true });
+// Chrome d'abord : depuis novembre 2026, Edge ne démarre plus en mode headless avec playwright-core 1.48.
+async function lanceNavigateur() {
+  let erreur;
+  for (const channel of process.env.NAVIGATEUR ? [process.env.NAVIGATEUR] : ['chrome', 'msedge']) {
+    try { return await chromium.launch({ channel, headless: true }); } catch (e) { erreur = e; }
+  }
+  throw erreur;
+}
+const navigateur = await lanceNavigateur();
 
 for (const langue of ['fr', 'en']) {
   const contexte = await navigateur.newContext({ viewport: { width: 1440, height: 900 } });
@@ -127,7 +136,7 @@ for (const langue of ['fr', 'en']) {
       const lu = tableCategories[i].map(sp);
       ctrl('tableau-categories', att.every((x, j) => x === null || x === lu[j]), `${nom} ${k} : ${lu} pour ${att}`);
     });
-    const tableFlux = d.tables[1], tableVoisins = d.tables.at(-1);   // les voisins sont toujours le dernier tableau (la fiche pilote en ajoute un)
+    const tableFlux = d.tables[1], tableVoisins = d.tables.at(-1);   // les voisins sont toujours le dernier tableau (la section de l'étalement en ajoute un)
     ctrl('tableau-flux', tableFlux.length === m.annees_flux.length, `${nom} ${tableFlux.length} années`);
     m.annees_flux.forEach((a, i) => {
       ctrl('tableau-flux', tableFlux[i][0].startsWith(String(a)) && sp(tableFlux[i][1]) === sp(sg(f.flux[i], 2)), `${nom} ${a} ${tableFlux[i]} pour ${f.flux[i]}`);
@@ -168,9 +177,9 @@ for (const langue of ['fr', 'en']) {
       pts.forEach((q, i) => ctrl('graphique-courbe', Math.abs(q[1] - (pts[i0][1] + pente * (vs[i] - vs[i0]))) < 0.8, `${nom} point ${m.annees_stock[i]}`));
     }
 
-    // Étalement vu du ciel : seulement sur les communes pilotes, avec les chiffres de leur fichier
-    const pilote = ((m.etalement && m.etalement.communes) || []).some((x) => x.code === co.code);
-    if (!pilote) ctrl('etalement', !(await p.$('#etalement')), `${nom} section étalement inattendue`);
+    // Étalement vu du ciel : seulement sur les communes calculées, avec les chiffres de leur fichier
+    const avecEtalement = ((m.etalement && m.etalement.communes) || []).some((x) => x.code === co.code);
+    if (!avecEtalement) ctrl('etalement', !(await p.$('#etalement')), `${nom} section étalement inattendue`);
     else {
       await p.waitForSelector('#etalement .etal-tache');
       const e = await (await p.request.get(`${base}data/etalement/${co.code}.json`)).json();
@@ -210,29 +219,52 @@ for (const langue of ['fr', 'en']) {
       for (const f of fonds.slice(0, 2)) ctrl('etalement', (await p.request.get(base + f)).ok(), `${nom} image ${f}`);
       ctrl('etalement', /SPW, 2026/.test(await p.$eval('.etal-credit', (x) => x.textContent)), `${nom} mention de la photo`);
       } else ctrl('etalement', !(await p.$('.etal-credit')) && !(await p.$('#etalement .etal-carte image')), `${nom} photos sans index`);
-      // Zoom, puis clic sur la plus grande construction visible : l'encart donne sa surface et sa période
-      await p.click('.etal-outils button:nth-child(1)'); await p.click('.etal-outils button:nth-child(1)');
-      const cible = await p.evaluate(() => {
+      // Clic sur la plus grande construction visible (après deux zooms, ou sur toute la commune si le centre est vide) :
+      // l'encart donne sa surface et sa période. Le point visé doit toucher la tache elle-même : le centre de la boîte
+      // d'un bâtiment en L ou en U tombe à côté.
+      const viser = () => p.evaluate(() => {
         const c = document.querySelector('.etal-carte svg').getBoundingClientRect();
-        let best = null, aire = 0;
-        for (const x of document.querySelectorAll('.etal-tache.construction')) {
-          const b = x.getBoundingClientRect();
-          if (b.left > c.left && b.right < c.right && b.top > c.top && b.bottom < c.bottom && b.width * b.height > aire) { aire = b.width * b.height; best = x; }
+        const visibles = [...document.querySelectorAll('.etal-tache.construction')].map((x) => [x, x.getBoundingClientRect()])
+          .filter(([, b]) => b.left > c.left && b.right < c.right && b.top > c.top && b.bottom < c.bottom && b.width >= 3 && b.height >= 3)
+          .sort((u, v) => v[1].width * v[1].height - u[1].width * u[1].height);
+        for (const [x] of visibles.slice(0, 20)) {
+          x.scrollIntoView({ block: 'center' });
+          const b = x.getBoundingClientRect(), px = b.left + b.width / 2, py = b.top + b.height / 2;
+          if (document.elementFromPoint(px, py) === x) return { i: Number(x.dataset.i), x: px, y: py };
         }
-        if (!best) return null;
-        best.scrollIntoView({ block: 'center' });
-        const b = best.getBoundingClientRect();
-        return { i: Number(best.dataset.i), x: b.left + b.width / 2, y: b.top + b.height / 2 };
+        return null;
       });
-      ctrl('etalement', cible !== null, `${nom} aucune construction visible après zoom`);
+      await p.click('.etal-outils button:nth-child(1)'); await p.click('.etal-outils button:nth-child(1)');
+      let cible = await viser();
+      if (!cible) {   // petite commune : on zoome à la molette (Ctrl) sur sa plus grande construction, comme un visiteur
+        await p.click('.etal-outils button:nth-child(3)');
+        // La position est relue à chaque cran : la page peut encore bouger pendant que les sections se mettent en place
+        const position = () => p.evaluate(() => {
+          let best = null, aire = 0;
+          for (const x of document.querySelectorAll('.etal-tache.construction')) { const b = x.getBBox(); if (b.width * b.height > aire) { aire = b.width * b.height; best = x; } }
+          let r = best.getBoundingClientRect();
+          if (r.top < 0 || r.bottom > innerHeight) { best.scrollIntoView({ block: 'center' }); r = best.getBoundingClientRect(); }
+          return [r.left + r.width / 2, r.top + r.height / 2];
+        });
+        for (let k = 0; k < 12; k++) {
+          const [x, y] = await position();
+          await p.mouse.move(x, y);
+          await p.keyboard.down('Control'); await p.mouse.wheel(0, -100); await p.keyboard.up('Control');
+          await p.waitForTimeout(30);
+        }
+        cible = await viser();
+      }
+      ctrl('etalement', cible !== null, `${nom} aucune construction cliquable`);
       if (cible) {
         await p.mouse.click(cible.x, cible.y);
         const encart = sp(await p.$eval('.etal-zone-carte .encart', (x) => x.innerText));
         ctrl('etalement', encart.includes(`${sp(nb(e.taches[cible.i].m2))} m²`), `${langue} ${nom} encart : ${encart.slice(0, 160)}`);
         const per = ['2018', '2019', '2020'][e.taches[cible.i].an];
         ctrl('etalement', encart.includes(per), `${langue} ${nom} période dans l'encart : ${encart.slice(0, 120)}`);
-        await p.click('.etal-zone-carte .etal-bouton');
-        if (ph) {
+        const voir = await p.$('.etal-zone-carte .etal-bouton');
+        ctrl('etalement', voir !== null, `${langue} ${nom} bouton « Voir de près » absent après le clic`);
+        if (voir) await voir.click();
+        if (ph && voir) {
         const vuesVisibles = await p.$$eval('#etalement .etal-carte svg svg image', (l) => l.map((x) => x.getAttribute('href')));
         ctrl('etalement', vuesVisibles.length > 0 && vuesVisibles.every((f) => /vues_2026_\d+\.jpg$/.test(f)), `${nom} vues à 0,5 m après zoom : ${vuesVisibles.length}`);
         for (const f of [...new Set(vuesVisibles)].slice(0, 2)) ctrl('etalement', (await p.request.get(base + f)).ok(), `${nom} image ${f}`);
@@ -355,7 +387,7 @@ for (const langue of ['fr', 'en']) {
   await contexte.close();
 }
 
-// Photos du SPW en direct (site hébergé hors artifact), sur une commune pilote, en français : les tuiles suivent
+// Photos du SPW en direct (site hébergé hors artifact), sur une commune calculée, en français : les tuiles suivent
 // l'année et le zoom, la mention cite le bon vol, et les années à vol partiel citent leur repli.
 {
   const meta = (await (await fetch(base + 'data/index.json')).json()).meta;
@@ -366,10 +398,13 @@ for (const langue of ['fr', 'en']) {
   p.on('pageerror', (e) => erreurs.push(e.message));
   await p.goto(base + '#commune-' + pil.code);
   await p.waitForSelector('#etalement .etal-tache');
-  const hrefs = () => p.$$eval('#etalement .etal-carte image', (l) => l.map((x) => x.getAttribute('href')));
+  // Chaque tuile garde son adresse d'origine (data-src) ; l'image affichée vient de la mémoire de la page (blob:)
+  const hrefs = () => p.$$eval('#etalement .etal-carte image', (l) => l.map((x) => x.dataset.src || x.getAttribute('href') || ''));
   const credit = () => p.$eval('.etal-credit', (x) => x.textContent);
   const direct = (await hrefs()).every((f) => f.startsWith('https://geoservices.wallonie.be/'));
   ctrl('photos-direct', (await hrefs()).length > 0 && direct, `${pil.nom} : tuiles en direct ${(await hrefs()).slice(0, 1)}`);
+  const affichees = await p.waitForFunction(() => [...document.querySelectorAll('#etalement .etal-carte image')].every((x) => /^(blob:|https:)/.test(x.getAttribute('href') || '')), null, { timeout: 15000 }).then(() => true, () => false);
+  ctrl('photos-direct', affichees, `${pil.nom} : toutes les tuiles reçoivent une image`);
   if (direct) {
     // La dernière année du curseur est celle affichée à l'ouverture (si son vol est partiel, ce contrôle signale le repli à vérifier).
     const der = await p.$eval('#etalement input[type=range]', (x) => x.max);

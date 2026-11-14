@@ -1,7 +1,9 @@
-"""Chaîne complète : acquisition des sources -> calculs -> figures -> fragments LaTeX du rapport.
+"""Chaîne du rapport : acquisition des sources -> calculs -> figures -> chiffres et tableaux LaTeX.
 
-Usage : python src/run_all.py [--refresh]
+Usage : .venv/Scripts/python.exe -X utf8 src/construire_rapport.py [--refresh]
   --refresh  retélécharge toutes les sources (sinon, le cache data/raw/ est réutilisé).
+Elle écrit aussi les références partagées avec le portail (references/communes_bassins_sdt.csv,
+references/trajectoires_sdt_2024_bassins.csv) et les superficies Statbel (data/processed/).
 """
 import argparse
 import sys
@@ -9,8 +11,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from artif import analyse, cadastre, communes, cpdt, figures, rapport, sdt  # noqa: E402
 from artif.config import DEFINITIONS  # noqa: E402
+from artif.rapport import analyse, cadastre, cpdt, figures, latex  # noqa: E402
+from artif.referentiels import communes, sdt  # noqa: E402
 
 
 def main() -> None:
@@ -34,7 +37,7 @@ def main() -> None:
     print("4/5 Figures")
     figures.run(res, cons_by_def)
     print("5/5 Chiffres et tableaux LaTeX")
-    rapport.run(res, cons_by_def, cpdt_bassins)
+    latex.run(res, cons_by_def, cpdt_bassins)
     print("Terminé. Compiler : latexmk -pdf -cd report/rapport.tex")
 
 

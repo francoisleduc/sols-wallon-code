@@ -11,8 +11,8 @@ titre inscrit dans chaque graphique.
 """
 import pandas as pd
 
-from . import sources
-from .config import CPDT_NOTE_PREP_URL, RAW, REFERENCES
+from .. import sources
+from ..config import CPDT_NOTE_PREP_URL, RAW, REFERENCES
 
 PDF = RAW / "cpdt" / "CPDT_RF_Dec_2025_Annexe_CR_InfoTer.1_Note_preparatoire.pdf"
 OUT = REFERENCES / "cpdt_2025_bassins.csv"

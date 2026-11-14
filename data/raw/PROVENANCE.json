@@ -264,5 +264,1853 @@
     "octets": 226808,
     "sha256": "e650bb875b91426b81be91215ed012b364996eed405fb6cbd174a306578cea16",
     "note": "indicateur inconnu, CC0"
+  },
+  "spw_walous/ocs_2019/WAL_OCS_IA__2019_GEOTIFF_3812.zip": {
+    "url": "https://geoservices.wallonie.be/geotraitement/spwdatadownload/results/86462606-4a21-49c8-ab9e-564ccba681b7/WAL_OCS_IA__2019_GEOTIFF_3812.zip",
+    "telecharge_le": "2026-11-14T11:09:26+00:00",
+    "octets": 723549682,
+    "sha256": "8d709ed4f6294d7874c9a3a05f4865f448215b928174a179f9cd235743e5a912",
+    "note": "SPW, WalOUS 2019, raster 1 m, EPSG:3812, CC BY 4.0"
+  },
+  "spw_walous/ocs_2020/WAL_OCS_IA__2020_GEOTIFF_3812.zip": {
+    "url": "https://geoservices.wallonie.be/geotraitement/spwdatadownload/results/47b348f1-6e7a-4baa-963c-0232a43c0cff/WAL_OCS_IA__2020_GEOTIFF_3812.zip",
+    "telecharge_le": "2026-11-14T11:10:32+00:00",
+    "octets": 728244755,
+    "sha256": "7edb5c7c38d72bbd83209af136a0de2fa99126439786c0b9153ae8f1f3b2e3c6",
+    "note": "SPW, WalOUS 2020, raster 1 m, EPSG:3812, CC BY 4.0"
+  },
+  "spw_amenagement/SDT_GEOPACKAGE_31370.zip": {
+    "url": "https://geoservices.wallonie.be/geotraitement/spwdatadownload/results/bd8edf22-ca57-431d-a76f-34d4572d2953/SDT_GEOPACKAGE_31370.zip",
+    "telecharge_le": "2026-11-14T11:10:34+00:00",
+    "octets": 6258890,
+    "sha256": "9cd79296b717ff99bac89777a8908d2b87d398066ae8bb1b6370381ee1a1abe6",
+    "note": "SPW, Schéma de développement du territoire (dont les centralités), CC BY 4.0"
+  },
+  "spw_amenagement/LU_PlannedLandUse_PDS.gml.zip": {
+    "url": "https://geoservices.wallonie.be/geotraitement/spwdatadownload/get/37502a64-868e-4e3d-bf66-31ff65a24a5a/LU_PlannedLandUse_PDS.gml.zip",
+    "telecharge_le": "2026-11-14T11:10:42+00:00",
+    "octets": 74874413,
+    "sha256": "1a1ac26c2d6dd38b53e1c7608d45e89d69d5789b51c13b2ecf34254d6393569f",
+    "note": "SPW, plan de secteur en vigueur (INSPIRE, GML), CC BY 4.0"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_93090_Viroinval.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_93090_Viroinval.zip",
+    "telecharge_le": "2026-11-14T11:10:45+00:00",
+    "octets": 8022446,
+    "sha256": "39af64b1bc54a6d7897b68d8f0b63e9ec2406c75d75b35694ed8602b26e5aff5",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_93088_Walcourt.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_93088_Walcourt.zip",
+    "telecharge_le": "2026-11-14T11:10:45+00:00",
+    "octets": 10695629,
+    "sha256": "c71ec73d7522f41042026fed7847b9f71fcf19febe3773aed330d07bdc7a54ac",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_93056_Philippeville.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_93056_Philippeville.zip",
+    "telecharge_le": "2026-11-14T11:10:48+00:00",
+    "octets": 10240142,
+    "sha256": "f790bfe3cdf8faae0b336c6c2b404f8da2293e7db69d41b521d01b4d01d0549b",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_93018_Doische.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_93018_Doische.zip",
+    "telecharge_le": "2026-11-14T11:10:52+00:00",
+    "octets": 6112172,
+    "sha256": "47fec5c067275832243accf2fcacc7b95e21d353e705e237e11b3775c832fce6",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_93014_Couvin.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_93014_Couvin.zip",
+    "telecharge_le": "2026-11-14T11:10:54+00:00",
+    "octets": 11380101,
+    "sha256": "1a0893b0197134314aa3d7ac197bc094d4601f43eb5075764e0cc7ce29b2f867",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_93022_Florennes.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_93022_Florennes.zip",
+    "telecharge_le": "2026-11-14T11:11:01+00:00",
+    "octets": 9016133,
+    "sha256": "4d4cc576f821b373f35cf2a924e5cd402cd6d54dc31a77a2f0fcbcc3cf9d2157",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_93010_Cerfontaine.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_93010_Cerfontaine.zip",
+    "telecharge_le": "2026-11-14T11:11:17+00:00",
+    "octets": 6821498,
+    "sha256": "449214253e18cd2279e34b93e06640ba9986d72b8324852ae8a72d4a1c5f4d10",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_92140_Jemeppe-sur-Sambre.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_92140_Jemeppe-sur-Sambre.zip",
+    "telecharge_le": "2026-11-14T11:11:26+00:00",
+    "octets": 8648191,
+    "sha256": "191474e0372b6e7e83303712475398fd391627670892a97c7361c737d2e4a660",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_92138_Fernelmont.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_92138_Fernelmont.zip",
+    "telecharge_le": "2026-11-14T11:11:31+00:00",
+    "octets": 6438768,
+    "sha256": "a36a1bc53a2acc5c2dbd44535e3683324877201cb1eb9758bffc8a834190a6ed",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_92137_Sambreville.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_92137_Sambreville.zip",
+    "telecharge_le": "2026-11-14T11:11:36+00:00",
+    "octets": 10083407,
+    "sha256": "3a9911f3db1c522fef38816750e4fd7b6942b859db8b8cd9a257b3a825255c36",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_92114_Sombreffe.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_92114_Sombreffe.zip",
+    "telecharge_le": "2026-11-14T11:11:42+00:00",
+    "octets": 5969326,
+    "sha256": "0a46501886faaf226a4597a4b36a71e7fdfbcc7ba7e0ef4ec44fd546c5a0c29c",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_92101_Profondeville.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_92101_Profondeville.zip",
+    "telecharge_le": "2026-11-14T11:11:52+00:00",
+    "octets": 7095421,
+    "sha256": "2a3b4c5319f4f654ee5e829bcf095404fc943a03f478d02eb4b6260d4d6d665e",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spw_amenagement/centralites_wallonie.geojson": {
+    "url": "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/CENTRALITES/MapServer/0/query?where=1=1&outFields=*",
+    "telecharge_le": "2026-11-14T11:11:57+00:00",
+    "octets": 3014563,
+    "sha256": "ba4b811e06043078691592bc2468a7cb0f3aa7c873ac7d7304677cc51c54f1ae",
+    "note": "SPW, centralites, toute la Wallonie, lu par pages de 1000 (CC BY 4.0)"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_92097_Ohey.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_92097_Ohey.zip",
+    "telecharge_le": "2026-11-14T11:11:57+00:00",
+    "octets": 5587713,
+    "sha256": "8fe9a599c4935c16d30992908d729fe4b77e000d6d13615ed53cfe842f48868d",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_92094_Namur.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_92094_Namur.zip",
+    "telecharge_le": "2026-11-14T11:12:06+00:00",
+    "octets": 25988328,
+    "sha256": "870393fab898a0a052ab87abccf2c30a4e5f5ad2b293e4d14b0f72cc5785c04d",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_92087_Mettet.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_92087_Mettet.zip",
+    "telecharge_le": "2026-11-14T11:12:09+00:00",
+    "octets": 8775454,
+    "sha256": "d0c09e8fe134434f7ba8de1dbdc20720a2aad499f415130a6a68c52adf2182c8",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_92054_Gesves.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_92054_Gesves.zip",
+    "telecharge_le": "2026-11-14T11:12:12+00:00",
+    "octets": 6355989,
+    "sha256": "fff377ca0ceda0bf839d863863401fcdf7d7bd8cb85c61cbb0e3b4bb9b618787",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_92048_Fosses-la-Ville.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_92048_Fosses-la-Ville.zip",
+    "telecharge_le": "2026-11-14T11:12:13+00:00",
+    "octets": 7165546,
+    "sha256": "c77bb8ceb0f208ef962d92378784656b88b6bbd1c2c9ea34537b3fc94a19eea0",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_92045_Floreffe.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_92045_Floreffe.zip",
+    "telecharge_le": "2026-11-14T11:12:25+00:00",
+    "octets": 5824580,
+    "sha256": "e4aef3a695161a270e9560dc66a5a0630a5054a674b3cc5a1ba5e71bfef9e2bd",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_92006_Assesse.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_92006_Assesse.zip",
+    "telecharge_le": "2026-11-14T11:12:43+00:00",
+    "octets": 6469547,
+    "sha256": "8bae998a2b85ec051e7bccbc81d857b1a61de8f4a8116a98fe5e5b357baebca4",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_92003_Andenne.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_92003_Andenne.zip",
+    "telecharge_le": "2026-11-14T11:12:46+00:00",
+    "octets": 10983618,
+    "sha256": "0d84bc822e158f83058d3c2bbc20bf57a2117481e86c6bcd95ffc677b91be36e",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_91143_Vresse-sur-Semois.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_91143_Vresse-sur-Semois.zip",
+    "telecharge_le": "2026-11-14T11:12:50+00:00",
+    "octets": 7555292,
+    "sha256": "f8c22303254723d847a23d1568efd8edf9e694a93fb303db65f897c9850f4d8c",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_91141_Yvoir.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_91141_Yvoir.zip",
+    "telecharge_le": "2026-11-14T11:14:07+00:00",
+    "octets": 6746671,
+    "sha256": "9201be7c621e45626be7190a5d0b0434ea33cc101a01ed087f2f2c38db3273cb",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_91120_Somme-Leuze.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_91120_Somme-Leuze.zip",
+    "telecharge_le": "2026-11-14T11:14:09+00:00",
+    "octets": 8066174,
+    "sha256": "d86a854989f59e824f214a10fa8005a596d3753047229ea396d57b1a1d1eb1a9",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_91114_Rochefort.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_91114_Rochefort.zip",
+    "telecharge_le": "2026-11-14T11:14:11+00:00",
+    "octets": 10399859,
+    "sha256": "eca768acfec9ff709c87321d9f69c9090ecd2889d2a171d62017767b14d33ebc",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_91103_Onhaye.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_91103_Onhaye.zip",
+    "telecharge_le": "2026-11-14T11:14:12+00:00",
+    "octets": 5412866,
+    "sha256": "439fce82cbff2398d2985e2d6a316207777caf6afa5244186f5597e195486405",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_91072_Houyet.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_91072_Houyet.zip",
+    "telecharge_le": "2026-11-14T11:14:23+00:00",
+    "octets": 8961582,
+    "sha256": "c0c6d8b14d7178b6dc98291dea744a696761e124c55896f00c49ca168df78c40",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_91064_Havelange.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_91064_Havelange.zip",
+    "telecharge_le": "2026-11-14T11:14:26+00:00",
+    "octets": 6556050,
+    "sha256": "63475191a529d3ac2dbacbd59ec6c0ac06023f393743f1ab5d094dca33235bde",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_91059_Hamois.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_91059_Hamois.zip",
+    "telecharge_le": "2026-11-14T11:14:29+00:00",
+    "octets": 6454843,
+    "sha256": "26b858f4d3d47cf30ffcc8a6b597d81352f9eafb8c00a0b58d67478a184a35ee",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_91034_Dinant.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_91034_Dinant.zip",
+    "telecharge_le": "2026-11-14T11:14:34+00:00",
+    "octets": 8528200,
+    "sha256": "c33cd619939b3491af5a9f61b466e7ef4254d18d791d3b03e6f98a0745a82b9b",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_91054_Gedinne.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_91054_Gedinne.zip",
+    "telecharge_le": "2026-11-14T11:14:34+00:00",
+    "octets": 9082491,
+    "sha256": "85a15fcd5d36204a3400e7f0015a17ac79c05cdf2b0fef066a7d605d59325d3c",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spw_amenagement/plan_de_secteur_wallonie.geojson": {
+    "url": "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/PDS/MapServer/22/query?where=1=1&outFields=*",
+    "telecharge_le": "2026-11-14T11:14:35+00:00",
+    "octets": 188859616,
+    "sha256": "289f1ac0a5a1867bc3cb216c8ab48caf220dac09f050f1b38e8d461df8b25672",
+    "note": "SPW, plan_de_secteur, toute la Wallonie, lu par pages de 1000 (CC BY 4.0)"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_91030_Ciney.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_91030_Ciney.zip",
+    "telecharge_le": "2026-11-14T11:14:38+00:00",
+    "octets": 10014172,
+    "sha256": "492244949dacb0687f5f9cf558f149582f506db3102f7f362acef460452c7ca2",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_91013_Beauraing.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_91013_Beauraing.zip",
+    "telecharge_le": "2026-11-14T11:14:41+00:00",
+    "octets": 10433686,
+    "sha256": "77466de503aeed013f95740b7cd58bb5388ba1ee329dfbee28ad62e07e71cb28",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_85046_Habay.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_85046_Habay.zip",
+    "telecharge_le": "2026-11-14T11:16:25+00:00",
+    "octets": 7839836,
+    "sha256": "87b2bb0f000d972cbb847978bf7e3845cd89c8726104bfc2a092be56deecccbe",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_85047_Rouvroy.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_85047_Rouvroy.zip",
+    "telecharge_le": "2026-11-14T11:16:26+00:00",
+    "octets": 4980519,
+    "sha256": "ab9a63002abf5c7b0cc09051036e0f9e2fb33bdb7303206fa0b9354ef9a3137d",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_85045_Virton.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_85045_Virton.zip",
+    "telecharge_le": "2026-11-14T11:16:27+00:00",
+    "octets": 8910498,
+    "sha256": "16395f10d84c038a883355e8570219773cd35651fc407ad1315d3d21cd197d77",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_85039_Tintigny.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_85039_Tintigny.zip",
+    "telecharge_le": "2026-11-14T11:16:39+00:00",
+    "octets": 6772426,
+    "sha256": "bd1dc026a15f2280c12c6c741bde78338db95f33d64bf587394a60678d8046c7",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_85026_Musson.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_85026_Musson.zip",
+    "telecharge_le": "2026-11-14T11:16:50+00:00",
+    "octets": 5955057,
+    "sha256": "9e11ddd6d4072cf3d3719424d619d44e648b76fab9ed7d7dd5cca1577abb0758",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_85024_Meix-devant-Virton.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_85024_Meix-devant-Virton.zip",
+    "telecharge_le": "2026-11-14T11:17:03+00:00",
+    "octets": 6570724,
+    "sha256": "2ea508b30caa6e3af86a05a2bbad5b45a10cab80cb532dda0d5971bf4c9fef4c",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_92035_Eghezée.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_92035_Eghezée.zip",
+    "telecharge_le": "2026-11-14T11:18:25+00:00",
+    "octets": 8382796,
+    "sha256": "9ebd3ca4a563fd68f173a01f10cdaaa0833f63c725f55b33c429452967e07d54",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_91142_Hastière.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_91142_Hastière.zip",
+    "telecharge_le": "2026-11-14T11:18:37+00:00",
+    "octets": 6851437,
+    "sha256": "1d9619e358c8c99ca03aea17b54d887a6524fe9ef671ac1070561eb74e2af74b",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_91015_Bièvre.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_91015_Bièvre.zip",
+    "telecharge_le": "2026-11-14T11:18:39+00:00",
+    "octets": 8020495,
+    "sha256": "c70f01e63c429c093c14a498ebad05753169bbb8f705c9d2cb818cdcaca0cb4e",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_92141_La Bruyère.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_92141_La Bruyère.zip",
+    "telecharge_le": "2026-11-14T11:19:25+00:00",
+    "octets": 6076771,
+    "sha256": "99d14a61e2925b8c322e82965372f051538b5d913cf14f18f38bc5d61dd19ce3",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_85034_Saint-Léger.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_85034_Saint-Léger.zip",
+    "telecharge_le": "2026-11-14T11:19:37+00:00",
+    "octets": 5666143,
+    "sha256": "d4a3432420dca28315d10603b5a29258b3234057ea80a491b4e04fb0cdd2528f",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_91005_Anhée.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_91005_Anhée.zip",
+    "telecharge_le": "2026-11-14T11:19:41+00:00",
+    "octets": 6586099,
+    "sha256": "f21bd7d901ac69feb9df01259ad553eb48f3d839c3ccbc8c87bea56170be4703",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_85011_Florenville.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_85011_Florenville.zip",
+    "telecharge_le": "2026-11-14T11:19:50+00:00",
+    "octets": 7776018,
+    "sha256": "0ef67c3f9b069c68e38f81eb272e0337cf8d0ce8c287ed49bd12c20565c91ee2",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_85007_Chiny.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_85007_Chiny.zip",
+    "telecharge_le": "2026-11-14T11:19:53+00:00",
+    "octets": 7642443,
+    "sha256": "895be96a4176b5bb74bcd570a00e0aac052b9006be2e7db2fd79e8e3df8f03d8",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_85009_Etalle.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_85009_Etalle.zip",
+    "telecharge_le": "2026-11-14T11:19:54+00:00",
+    "octets": 7462422,
+    "sha256": "e7954b54f8cb38b7337538531a74149afa858286454c7f5a9e7432b2b8e7a57b",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_84077_Libramont-Chevigny.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_84077_Libramont-Chevigny.zip",
+    "telecharge_le": "2026-11-14T11:19:55+00:00",
+    "octets": 10197591,
+    "sha256": "d79360922cba0a25407dc365a85dedf78b74be7f96e94f8aab2032fcc6ec9ec4",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_84068_Tellin.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_84068_Tellin.zip",
+    "telecharge_le": "2026-11-14T11:19:56+00:00",
+    "octets": 5733144,
+    "sha256": "b27025567f39ce079c9aea69d52ce155099b0a1deadbb144ef7f0b485d427f95",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_84075_Wellin.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_84075_Wellin.zip",
+    "telecharge_le": "2026-11-14T11:19:56+00:00",
+    "octets": 6091636,
+    "sha256": "1e4cb888fd9b4334119c8ac60c6d5e7b7bdfca1a0c62ac4aefd677bf45b83aa4",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_84059_Saint-Hubert.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_84059_Saint-Hubert.zip",
+    "telecharge_le": "2026-11-14T11:20:08+00:00",
+    "octets": 7683703,
+    "sha256": "16d97a8af558a25df1fad6bf74257e982887523d7158792d9e49ae50605ec96a",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_84043_Neufchâteau.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_84043_Neufchâteau.zip",
+    "telecharge_le": "2026-11-14T11:20:43+00:00",
+    "octets": 8459634,
+    "sha256": "3c09381aa0c8e95cca6b46bd57b2aac5bd1966f6adaecbb2594ea852c30ab454",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_84035_Libin.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_84035_Libin.zip",
+    "telecharge_le": "2026-11-14T11:20:45+00:00",
+    "octets": 8076698,
+    "sha256": "e7c6146d31e1a8e6f77c18b66967478588918b0234a092c3c6db8b5b8da8aec1",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_84033_Léglise.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_84033_Léglise.zip",
+    "telecharge_le": "2026-11-14T11:20:46+00:00",
+    "octets": 9115792,
+    "sha256": "b6aca6779f56fc3e4236d4c5209a73dc9071e17fbc3f198822434307b191fe3e",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_84029_Herbeumont.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_84029_Herbeumont.zip",
+    "telecharge_le": "2026-11-14T11:20:49+00:00",
+    "octets": 5458143,
+    "sha256": "2d22a3969127b5d02a47b4939d1d2fc57c10b51d3cf1e5e6e9e2c40d8841c063",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_84016_Daverdisse.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_84016_Daverdisse.zip",
+    "telecharge_le": "2026-11-14T11:20:51+00:00",
+    "octets": 5354827,
+    "sha256": "d71238e9da1aa58781859510f89555145bc1bf03bb0dab8151cda0ad3474c4ac",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_84010_Bouillon.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_84010_Bouillon.zip",
+    "telecharge_le": "2026-11-14T11:20:53+00:00",
+    "octets": 9067960,
+    "sha256": "fb2d9345935b1ff6ccc4357389719b1a313d40740d764ac11e31c6208c8694a9",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_84009_Bertrix.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_84009_Bertrix.zip",
+    "telecharge_le": "2026-11-14T11:20:56+00:00",
+    "octets": 9745631,
+    "sha256": "1cfb10b7b18b617f02adb84f9bea68fffdd8670b480d73ca6eb27bd60e7a1c70",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_84050_Paliseul.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_84050_Paliseul.zip",
+    "telecharge_le": "2026-11-14T11:21:01+00:00",
+    "octets": 8216452,
+    "sha256": "fd89b5e8d83ac2a4f24f765284bdb904efbf31de9b7deca982110b14b749aefc",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_83049_Tenneville.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_83049_Tenneville.zip",
+    "telecharge_le": "2026-11-14T11:21:03+00:00",
+    "octets": 6309369,
+    "sha256": "2a1fb23e602cb91904aebaee4f9b3a9da33385379f57574d278a98fa4301ea54",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_83044_Rendeux.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_83044_Rendeux.zip",
+    "telecharge_le": "2026-11-14T11:21:05+00:00",
+    "octets": 7561891,
+    "sha256": "9e84e16a6ab586c2b06015c741f996a1e29359368f651aa6a02a3a77a41dc8c1",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_83040_Nassogne.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_83040_Nassogne.zip",
+    "telecharge_le": "2026-11-14T11:21:07+00:00",
+    "octets": 7752183,
+    "sha256": "124c67e9e0de1b4ac63389289e2d7288251e8421fc20188883e556fdc71c2f9d",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_83055_Manhay.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_83055_Manhay.zip",
+    "telecharge_le": "2026-11-14T11:21:09+00:00",
+    "octets": 9273341,
+    "sha256": "5882c03af210b3cac4ce98175da5b71db8f92f0dc6148aa8241208973f0abef7",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_83031_La Roche-en-Ardenne.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_83031_La Roche-en-Ardenne.zip",
+    "telecharge_le": "2026-11-14T11:21:10+00:00",
+    "octets": 10070474,
+    "sha256": "41885f0cafc4112cf14fbcb668843712c50a50d401adadb4c14a8101661465b0",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_83028_Hotton.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_83028_Hotton.zip",
+    "telecharge_le": "2026-11-14T11:21:11+00:00",
+    "octets": 6419922,
+    "sha256": "98a885f4a05483a8be6ccc4fc7858f05cc18fcaa600075c5cb75e7c2c36b6d8b",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_83012_Durbuy.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_83012_Durbuy.zip",
+    "telecharge_le": "2026-11-14T11:21:14+00:00",
+    "octets": 12836655,
+    "sha256": "69f7d8b6f4b23770758e841ff68d59fecd4f1891d192b8e8721465a8333489d3",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_82039_Bastogne.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_82039_Bastogne.zip",
+    "telecharge_le": "2026-11-14T11:21:22+00:00",
+    "octets": 17317674,
+    "sha256": "0e8d3a79e651ac175ee579ec794cdd4ceec19742a58d2a0099cac30260f1498e",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_82038_Sainte-Ode.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_82038_Sainte-Ode.zip",
+    "telecharge_le": "2026-11-14T11:21:34+00:00",
+    "octets": 6554362,
+    "sha256": "468304421e86a3348aa23dd30e8ebbef3b5df3b8534a785f60c6261227f846bc",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_82037_Gouvy.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_82037_Gouvy.zip",
+    "telecharge_le": "2026-11-14T11:21:36+00:00",
+    "octets": 10930641,
+    "sha256": "92849461760bb921c34720203f881cda77d1be88fd8e691313b80465542e416e",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_82036_Vaux-sur-Sûre.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_82036_Vaux-sur-Sûre.zip",
+    "telecharge_le": "2026-11-14T11:21:48+00:00",
+    "octets": 8645883,
+    "sha256": "0a636dec3769bf291eb2eb1235763d58266a8019b7bc71287aeb9b6e18e81cdb",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_82032_Vielsalm.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_82032_Vielsalm.zip",
+    "telecharge_le": "2026-11-14T11:21:52+00:00",
+    "octets": 10828484,
+    "sha256": "f91bd2df5709fcbddc58660579ec68a8a3f5bb0de2ec1488b97b4290c377f9d6",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_82014_Houffalize.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_82014_Houffalize.zip",
+    "telecharge_le": "2026-11-14T11:21:54+00:00",
+    "octets": 11145602,
+    "sha256": "d1fe707cb369605712acbce0901f296e8726f48cda742d71de844a891f7cd588",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_81013_Martelange.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_81013_Martelange.zip",
+    "telecharge_le": "2026-11-14T11:23:40+00:00",
+    "octets": 4472065,
+    "sha256": "1643a0437479ad7a2228ba5dfce874ad7415104f093a1fa5017b8890d2f49fc5",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_81004_Aubange.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_81004_Aubange.zip",
+    "telecharge_le": "2026-11-14T11:23:42+00:00",
+    "octets": 8887036,
+    "sha256": "171be805ca8eada6d3d30203db2e52597039233f9509ce915c183e0041b3bcd9",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_81003_Attert.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_81003_Attert.zip",
+    "telecharge_le": "2026-11-14T11:23:55+00:00",
+    "octets": 7573491,
+    "sha256": "2e89006b31a07467ae801f766d2391eaebf16f3126e170ce2540a705a07fbd4b",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_81001_Arlon.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_81001_Arlon.zip",
+    "telecharge_le": "2026-11-14T11:23:57+00:00",
+    "octets": 13333170,
+    "sha256": "7a57594b25ab71c3a21f20b0da34884faf7770f836fa2bc2f04a2830bfb7eb05",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_64076_Faimes.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_64076_Faimes.zip",
+    "telecharge_le": "2026-11-14T11:24:28+00:00",
+    "octets": 4932239,
+    "sha256": "a1e258a1b05116eb73a0cfd973eec9b0892966fa59c3927ac2e7b54936bfb208",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_64075_Wasseiges.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_64075_Wasseiges.zip",
+    "telecharge_le": "2026-11-14T11:24:30+00:00",
+    "octets": 4843110,
+    "sha256": "d40e3021e5c56c4d5b3a8bb9fc7153b678afad7db03ff5c64dece8571f173183",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_64074_Waremme.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_64074_Waremme.zip",
+    "telecharge_le": "2026-11-14T11:24:31+00:00",
+    "octets": 7318748,
+    "sha256": "81cc1583d99bf2977a46afc1a913a88950bbff361b1ad3e057d6d3821536b4e4",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_64063_Remicourt.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_64063_Remicourt.zip",
+    "telecharge_le": "2026-11-14T11:24:46+00:00",
+    "octets": 5365262,
+    "sha256": "e0da34c326fb1982413a7565984d7df3b6f6cb609cfb2bf5cf270d47fc78885b",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_64056_Oreye.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_64056_Oreye.zip",
+    "telecharge_le": "2026-11-14T11:24:58+00:00",
+    "octets": 4801911,
+    "sha256": "fb280bc09db2a11432ca04d0ce4251380f5fcf9d4987419ce3705a78db8f00eb",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_64047_Lincent.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_64047_Lincent.zip",
+    "telecharge_le": "2026-11-14T11:25:00+00:00",
+    "octets": 4660212,
+    "sha256": "4759474c93faecc00f2243336cf9bbc4a56a77f7869afa5b1a8203365bbf6a64",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_64034_Hannut.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_64034_Hannut.zip",
+    "telecharge_le": "2026-11-14T11:25:04+00:00",
+    "octets": 9678442,
+    "sha256": "0575eabbb81683e7acb77bd311481fa9ee86a90ddca6f012a3cdb336c28eee39",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_64029_Geer.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_64029_Geer.zip",
+    "telecharge_le": "2026-11-14T11:25:07+00:00",
+    "octets": 4717436,
+    "sha256": "f51e08fd07f685199824fad994438a7c37d82ede359ccccb10837534640dd5b0",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_64025_Fexhe-le-Haut-Clocher.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_64025_Fexhe-le-Haut-Clocher.zip",
+    "telecharge_le": "2026-11-14T11:25:08+00:00",
+    "octets": 4545736,
+    "sha256": "4e8dab5222bd12b7a42c4b522fdce33af07ed1273cd1a3f947289bd282e885c5",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_64023_Donceel.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_64023_Donceel.zip",
+    "telecharge_le": "2026-11-14T11:25:09+00:00",
+    "octets": 4671628,
+    "sha256": "6e40ce6139eaed58e9dda372d355cd90f8fa804804e3886335cb3f26bceb3de9",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_64021_Crisnée.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_64021_Crisnée.zip",
+    "telecharge_le": "2026-11-14T11:25:11+00:00",
+    "octets": 4542446,
+    "sha256": "d722dd7164445bd882778adf6a689ab7e3703085d7edcd727ea100156b2071a1",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_64015_Braives.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_64015_Braives.zip",
+    "telecharge_le": "2026-11-14T11:25:12+00:00",
+    "octets": 6184791,
+    "sha256": "5c69bf1f8178dd0a60a11a03f6d47d37828b17e1e2b0e36a6d5fe2a46769293d",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_64008_Berloz.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_64008_Berloz.zip",
+    "telecharge_le": "2026-11-14T11:25:25+00:00",
+    "octets": 4539339,
+    "sha256": "2984855b7c521b6073ef6b61bac6f7fff2eea80f49349daf8350b6c7ad45205e",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_64065_Saint-Georges-sur-Meuse.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_64065_Saint-Georges-sur-Meuse.zip",
+    "telecharge_le": "2026-11-14T11:25:35+00:00",
+    "octets": 6010983,
+    "sha256": "59973828e0ee85a19d24223ce92c2decf11a6d9f8e5130af4ab4b9255999ceb6",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63088_Plombières.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63088_Plombières.zip",
+    "telecharge_le": "2026-11-14T11:25:37+00:00",
+    "octets": 7522979,
+    "sha256": "27319595d9466581e6488e42c794f221c90efe14f5d9f937949bb47c61ad0d3f",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63087_Burg-Reuland.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63087_Burg-Reuland.zip",
+    "telecharge_le": "2026-11-14T11:25:49+00:00",
+    "octets": 9010566,
+    "sha256": "18faeefe265cd3dd43c001dede7a9deb8de749db1ab426ac0fa710ac6bd5f574",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63086_Trois-Ponts.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63086_Trois-Ponts.zip",
+    "telecharge_le": "2026-11-14T11:25:51+00:00",
+    "octets": 6406589,
+    "sha256": "9813f92382acc2dc9839a2b666a219e01c156bd475354100ba3d4712f47e374a",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63084_Welkenraedt.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63084_Welkenraedt.zip",
+    "telecharge_le": "2026-11-14T11:25:52+00:00",
+    "octets": 6090423,
+    "sha256": "ecaab7e8d46e53191001b2a1d3fefc43f62ec0d9140642bbc66fad40576ca807",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63089_Thimister-Clermont.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63089_Thimister-Clermont.zip",
+    "telecharge_le": "2026-11-14T11:25:57+00:00",
+    "octets": 5496987,
+    "sha256": "e378788bd00a17ab0ff2d813eb5f97f57ba85a0938e64b3006b5f62b36c4932f",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63079_Verviers.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63079_Verviers.zip",
+    "telecharge_le": "2026-11-14T11:26:00+00:00",
+    "octets": 13398472,
+    "sha256": "e551512b2f914ebb3fbb628c8d77e2fa65eb30cb9127ace814e74de00ed36aa6",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63076_Theux.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63076_Theux.zip",
+    "telecharge_le": "2026-11-14T11:26:33+00:00",
+    "octets": 8050903,
+    "sha256": "ebb23fe77363bb40207a01bd92eb07a496471bec4102656b88d478df9aab56da",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63075_Stoumont.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63075_Stoumont.zip",
+    "telecharge_le": "2026-11-14T11:27:07+00:00",
+    "octets": 8439965,
+    "sha256": "022f3ed7138cfadf875897c7e7c844ff24300f29d880f3804f24512237e66de9",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63072_Spa.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63072_Spa.zip",
+    "telecharge_le": "2026-11-14T11:27:36+00:00",
+    "octets": 5696376,
+    "sha256": "d30c0c7fa212cf738150159524596b771c73b6c5cbcb46e06430ed41b8e0d928",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63067_Sankt Vith_Saint-Vith.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63067_Sankt Vith_Saint-Vith.zip",
+    "telecharge_le": "2026-11-14T11:27:37+00:00",
+    "octets": 10594696,
+    "sha256": "f583db3b45f2db2d07e9b85c34c505ca04d238decd02f147a962ca0677a82d75",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63061_Raeren.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63061_Raeren.zip",
+    "telecharge_le": "2026-11-14T11:27:39+00:00",
+    "octets": 6932764,
+    "sha256": "e6f19cc48df521c6b8108d8447657b4e9b216a8166ca0d4657d6f2b73f36b83c",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63058_Pepinster.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63058_Pepinster.zip",
+    "telecharge_le": "2026-11-14T11:27:40+00:00",
+    "octets": 6164409,
+    "sha256": "7d878b9ef13c6a11d9b1844b4bec872c945859d521d2b48a96976add3464b6a2",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63057_Olne.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63057_Olne.zip",
+    "telecharge_le": "2026-11-14T11:27:51+00:00",
+    "octets": 4977928,
+    "sha256": "65afe0cf5b5bb78c5386dfb6103bbb5db194e6d0f52c57662300b538f104efd3",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63049_Malmedy.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63049_Malmedy.zip",
+    "telecharge_le": "2026-11-14T11:28:05+00:00",
+    "octets": 9249643,
+    "sha256": "4216d764f2c3b2f7c5a0e1e0a8aeeadd36aec3145f56de33dcc9fceb68f7c8d1",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63073_Stavelot.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63073_Stavelot.zip",
+    "telecharge_le": "2026-11-14T11:28:10+00:00",
+    "octets": 7835336,
+    "sha256": "739053f2662ac3c7281b673bbd7d35f3e921af9c0fae6080c8da7db2ce2adee7",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63046_Limbourg.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63046_Limbourg.zip",
+    "telecharge_le": "2026-11-14T11:28:12+00:00",
+    "octets": 5429311,
+    "sha256": "3c4a2be1731efc65ccd4f931c6a64d0dfe326a61675803d8eb3fd43cc8f67828",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63048_Lontzen.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63048_Lontzen.zip",
+    "telecharge_le": "2026-11-14T11:28:17+00:00",
+    "octets": 5404173,
+    "sha256": "f5b6eaaa32e06ce284303572b31f66b3cb683f0203c14978d458f5533ae85904",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63040_Kelmis_La Calamine.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63040_Kelmis_La Calamine.zip",
+    "telecharge_le": "2026-11-14T11:28:21+00:00",
+    "octets": 5835691,
+    "sha256": "0c9215d532bf4b592743f51479d3783dd2974e21f4c129a062c532115637ef6e",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63038_Jalhay.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63038_Jalhay.zip",
+    "telecharge_le": "2026-11-14T11:28:23+00:00",
+    "octets": 7304041,
+    "sha256": "cc07e621f9aa83320e05c410667c3de74df723980e72038c973293f59739e0f4",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63045_Lierneux.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63045_Lierneux.zip",
+    "telecharge_le": "2026-11-14T11:28:24+00:00",
+    "octets": 8152265,
+    "sha256": "305605d947157547ff38ea2f0c1ac0448759be1265d57d5448552147b635a26b",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63020_Dison.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63020_Dison.zip",
+    "telecharge_le": "2026-11-14T11:28:26+00:00",
+    "octets": 6084848,
+    "sha256": "f177ca290f03ae298bc2d674d7a6ab737943c7a0fd09f676450d1a4d647d5c7b",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63023_Eupen.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63023_Eupen.zip",
+    "telecharge_le": "2026-11-14T11:28:26+00:00",
+    "octets": 7940738,
+    "sha256": "04445c7d619ad586ae322657b1346c1fcf2cd41142e533c7fabb45bb5cbe9f49",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63012_Büllingen_Bullange.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63012_Büllingen_Bullange.zip",
+    "telecharge_le": "2026-11-14T11:28:28+00:00",
+    "octets": 8766820,
+    "sha256": "01c3135716308a5488b12e5e7757157ebf03b1a2ce86f5381ff7349f178b4cbe",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63013_Bütgenbach_Butgenbach.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63013_Bütgenbach_Butgenbach.zip",
+    "telecharge_le": "2026-11-14T11:28:29+00:00",
+    "octets": 6786198,
+    "sha256": "23d02795a86c8d19b8dfd589d123c04f2e63dd5bf04c9f74e9c4f1e3d18fa1a1",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63004_Baelen.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63004_Baelen.zip",
+    "telecharge_le": "2026-11-14T11:28:30+00:00",
+    "octets": 5023970,
+    "sha256": "8cc48441dad87893eb2865fac4ff10785680b0f22c584ce4f5ca269fd5c73c33",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63003_Aubel.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63003_Aubel.zip",
+    "telecharge_le": "2026-11-14T11:28:30+00:00",
+    "octets": 4919618,
+    "sha256": "e07cc63aca3ee38e1fdae2bf2d00751261f9734e5582c836ed187eb0ee4c7870",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62122_Trooz.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62122_Trooz.zip",
+    "telecharge_le": "2026-11-14T11:28:34+00:00",
+    "octets": 6173745,
+    "sha256": "a73d37eda411380eaef75e21e7a4d2ef449cd8120f948991816e7ceeeeac41ae",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62121_Neupré.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62121_Neupré.zip",
+    "telecharge_le": "2026-11-14T11:28:36+00:00",
+    "octets": 6163863,
+    "sha256": "2575098bcd765cba4422065d106641bf7eecd7a03fe64657005daf9396145242",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62120_Flémalle.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62120_Flémalle.zip",
+    "telecharge_le": "2026-11-14T11:28:39+00:00",
+    "octets": 11173912,
+    "sha256": "31dd2cdf548074a16a46cb2efae27ebfce4b5ba8d75f84e0145046cd511cd666",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62119_Blegny.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62119_Blegny.zip",
+    "telecharge_le": "2026-11-14T11:28:41+00:00",
+    "octets": 7526773,
+    "sha256": "08721c1d3601dfd763ef0e6ce7d5aff43fe705e1e5a611055bddfd80c4b56eaa",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62118_Grâce-Hollogne.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62118_Grâce-Hollogne.zip",
+    "telecharge_le": "2026-11-14T11:28:53+00:00",
+    "octets": 9474968,
+    "sha256": "f714b2ae112e146be371586cacbde6892b1983dc54db67f61d1d5b20516bee22",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62108_Visé.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62108_Visé.zip",
+    "telecharge_le": "2026-11-14T11:28:55+00:00",
+    "octets": 8207892,
+    "sha256": "c5b8a328be0302cfa7077b8ca639a3a8c6e63f212aee1161989b42db8ee893bc",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62100_Sprimont.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62100_Sprimont.zip",
+    "telecharge_le": "2026-11-14T11:28:58+00:00",
+    "octets": 9657653,
+    "sha256": "24663150bf98c19ceda707946f8adcf14ba5987dc1bc25ab4a873211d2b7953d",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63001_Amel_Amblève.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63001_Amel_Amblève.zip",
+    "telecharge_le": "2026-11-14T11:29:02+00:00",
+    "octets": 8307959,
+    "sha256": "d2bf62214ff61fb9259899ad29e3134d57fd72f7d1a281fe84a296c83c553973",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62096_Seraing.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62096_Seraing.zip",
+    "telecharge_le": "2026-11-14T11:29:05+00:00",
+    "octets": 17017563,
+    "sha256": "1aabfa0900bfed85037cef275afde31fd191f6d561290b1dc2f17a0cf506c8b1",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62093_Saint-Nicolas.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62093_Saint-Nicolas.zip",
+    "telecharge_le": "2026-11-14T11:29:07+00:00",
+    "octets": 8623281,
+    "sha256": "eaa6725b250f10a95afe22ed2dcb18edbe00aae8ad8fac0982750b74ddb29715",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62079_Oupeye.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62079_Oupeye.zip",
+    "telecharge_le": "2026-11-14T11:29:10+00:00",
+    "octets": 10014365,
+    "sha256": "5a0033a08d42bd7e3e9afde19649fa8691e885ce916d5bd3e27aaa19834e5f75",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62099_Soumagne.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62099_Soumagne.zip",
+    "telecharge_le": "2026-11-14T11:29:11+00:00",
+    "octets": 8027837,
+    "sha256": "c903d003bb5f17ac7f9b06df4339380949aba4f0147e1f6a6068c4a7cf528626",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62063_Liège.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62063_Liège.zip",
+    "telecharge_le": "2026-11-14T11:29:21+00:00",
+    "octets": 35904001,
+    "sha256": "1ba3072d40e7530ec03dacdd9d879b6808761317ea7b5c624897a6a833d04025",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62060_Juprelle.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62060_Juprelle.zip",
+    "telecharge_le": "2026-11-14T11:29:23+00:00",
+    "octets": 6388488,
+    "sha256": "817e619dddbab800a68de962f5ef12d6694e431f476d8b75b9f5d8f12133bc01",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62051_Herstal.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62051_Herstal.zip",
+    "telecharge_le": "2026-11-14T11:29:24+00:00",
+    "octets": 12337648,
+    "sha256": "46238407e7da85e51ea44510690be1bb3f891d9277d4f8c940749c31ec99458d",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62038_Fléron.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62038_Fléron.zip",
+    "telecharge_le": "2026-11-14T11:29:25+00:00",
+    "octets": 7253760,
+    "sha256": "3dbd4fa3fb692db6b76d2c107c8b3b3e8d57da4d8ad7e4344d2ec5102cd441f3",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62032_Esneux.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62032_Esneux.zip",
+    "telecharge_le": "2026-11-14T11:29:26+00:00",
+    "octets": 7482156,
+    "sha256": "03a5d9031f7aba84e678d6e01375164f7b0c0b49ac6779f368166f68c0fabb72",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62027_Dalhem.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62027_Dalhem.zip",
+    "telecharge_le": "2026-11-14T11:29:58+00:00",
+    "octets": 6315401,
+    "sha256": "043e026a44a84086701776d52888df6e5b271d459896f86e2f33a3745ebb54c8",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62022_Chaudfontaine.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62022_Chaudfontaine.zip",
+    "telecharge_le": "2026-11-14T11:30:32+00:00",
+    "octets": 8567852,
+    "sha256": "e5fd8703913c31c5269559f639b1ece9e91fae90b5640ba9914972e3ec692c22",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62015_Beyne-Heusay.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62015_Beyne-Heusay.zip",
+    "telecharge_le": "2026-11-14T11:30:44+00:00",
+    "octets": 6467465,
+    "sha256": "447c7d5d9481db9cb51ee236510d63e0d0e1de19c3723020b5dedce046c11c58",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62011_Bassenge.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62011_Bassenge.zip",
+    "telecharge_le": "2026-11-14T11:30:57+00:00",
+    "octets": 7407745,
+    "sha256": "355d6b3192c3a6c91f2de258bcbf9f4147219eee7e6d41d889e9568324f2a6ba",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62009_Aywaille.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62009_Aywaille.zip",
+    "telecharge_le": "2026-11-14T11:30:59+00:00",
+    "octets": 8539748,
+    "sha256": "2bd3426471b132eee88bda7160bd876be4a7fffa1633d10abb2f4f26f6e4a3d8",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62006_Awans.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62006_Awans.zip",
+    "telecharge_le": "2026-11-14T11:31:00+00:00",
+    "octets": 6190192,
+    "sha256": "202c04026bd69734d6766376bb504062ff1d3d2c3810c825b56ab6b9df796f9a",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61081_Tinlot.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61081_Tinlot.zip",
+    "telecharge_le": "2026-11-14T11:31:21+00:00",
+    "octets": 4609855,
+    "sha256": "2327ac8a20cf7a5112452ee2e04340467161ed337950cfe8dd81d0bc49e84fe4",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61080_Engis.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61080_Engis.zip",
+    "telecharge_le": "2026-11-14T11:31:23+00:00",
+    "octets": 5615911,
+    "sha256": "33e3afb6755d3257850cfa86a91d557ea8913bb09f3b43ec9b8fd6c19267855b",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62003_Ans.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62003_Ans.zip",
+    "telecharge_le": "2026-11-14T11:31:32+00:00",
+    "octets": 9504607,
+    "sha256": "8a76784f3160bd37ca587d01e0a151af0f35589c4303d7410cfd9603cce43bd3",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61079_Anthisnes.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61079_Anthisnes.zip",
+    "telecharge_le": "2026-11-14T11:31:35+00:00",
+    "octets": 5327127,
+    "sha256": "915f1b3a62ac6ea98fe017315b937a2d59a7df3611f11f3c9e9b9bda317223c0",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61068_Villers-le-Bouillet.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61068_Villers-le-Bouillet.zip",
+    "telecharge_le": "2026-11-14T11:31:37+00:00",
+    "octets": 5832640,
+    "sha256": "ffecc3347f17c2a090d1bd582c8dd2323c169573af9c8c15fb11bb7f5d358c4f",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61072_Wanze.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61072_Wanze.zip",
+    "telecharge_le": "2026-11-14T11:31:45+00:00",
+    "octets": 7939906,
+    "sha256": "20fddb0dd2a14d8d3eec4e8a008d8b4652e530224993b50e51163a439bfe8bd2",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61048_Ouffet.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61048_Ouffet.zip",
+    "telecharge_le": "2026-11-14T11:31:46+00:00",
+    "octets": 4832100,
+    "sha256": "75bc0408bc83c1033ca4a202d32a3ee71c4a3ae1dfcd5723483fd345b3878c32",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61043_Nandrin.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61043_Nandrin.zip",
+    "telecharge_le": "2026-11-14T11:31:59+00:00",
+    "octets": 5490756,
+    "sha256": "bd63dddb7dd9a6f67dbaf553c1c0edd3a56dedba7371622c0b152e02c08b15c8",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61041_Modave.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61041_Modave.zip",
+    "telecharge_le": "2026-11-14T11:32:01+00:00",
+    "octets": 5214837,
+    "sha256": "bf5eece4cf596286c083990d2d9c91c787fcb09956f5d06078c89cadbf20546f",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61039_Marchin.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61039_Marchin.zip",
+    "telecharge_le": "2026-11-14T11:32:02+00:00",
+    "octets": 5429055,
+    "sha256": "e0f8efd73d591cf76f30de6a5a7864b3dad9a91fb61f70bec18ae10f105941c0",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61031_Huy.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61031_Huy.zip",
+    "telecharge_le": "2026-11-14T11:32:16+00:00",
+    "octets": 8869341,
+    "sha256": "1b8f620da3f51e75fe51db12937675b78f2b870ba67b13115828d59943b3aa4d",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61028_Héron.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61028_Héron.zip",
+    "telecharge_le": "2026-11-14T11:32:20+00:00",
+    "octets": 5546092,
+    "sha256": "cf969561fecd429e528cf868fc690862c5454162d3858d9f7383b7283c71bfe9",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61024_Hamoir.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61024_Hamoir.zip",
+    "telecharge_le": "2026-11-14T11:32:23+00:00",
+    "octets": 5326037,
+    "sha256": "79043cbf374e92ec86e24fff810e12a1bf391f200297240f69d5d770c93221c9",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61019_Ferrières.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61019_Ferrières.zip",
+    "telecharge_le": "2026-11-14T11:32:26+00:00",
+    "octets": 6759497,
+    "sha256": "ab10a5c71fb592f1c5e4438826b6b7ae6c1d6dcbeb8cec7d665908fa308a37c6",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61012_Clavier.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61012_Clavier.zip",
+    "telecharge_le": "2026-11-14T11:32:27+00:00",
+    "octets": 5977937,
+    "sha256": "c91c07a91ef8f45bd00dc2f50d14c97432168ca2230e862126b3065ad8444637",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61063_Verlaine.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61063_Verlaine.zip",
+    "telecharge_le": "2026-11-14T11:32:41+00:00",
+    "octets": 4912902,
+    "sha256": "a7e2060d8824bc586f024dc77299722f2c75647efa06e60c1e3ef62ae43f6a9f",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61003_Amay.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61003_Amay.zip",
+    "telecharge_le": "2026-11-14T11:32:42+00:00",
+    "octets": 7741759,
+    "sha256": "65cc8d3c5bccd9b33e2eb5f41c39a086497da9932d6ca46a94c2b7b468b496f0",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_58004_Morlanwelz.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_58004_Morlanwelz.zip",
+    "telecharge_le": "2026-11-14T11:32:44+00:00",
+    "octets": 8170315,
+    "sha256": "8fc4340aba978116a143a45ebd84ba5bf79c0931c447a195a60c803d60b558cc",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_58003_Estinnes.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_58003_Estinnes.zip",
+    "telecharge_le": "2026-11-14T11:32:46+00:00",
+    "octets": 6515078,
+    "sha256": "5706f02a821e4563715b96f81c59875d443280d09a23c0c06bc4be0c116a6364",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_58002_Binche.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_58002_Binche.zip",
+    "telecharge_le": "2026-11-14T11:32:48+00:00",
+    "octets": 12125593,
+    "sha256": "d2a354f86c6237bb75eb43f4338069c259d256a056e02d3b117746f59dd01706",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_58001_La Louvière.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_58001_La Louvière.zip",
+    "telecharge_le": "2026-11-14T11:32:52+00:00",
+    "octets": 21076096,
+    "sha256": "de958d35f877ee36d81b68f25ccd6c4691eab3488283fa5b9c37be9701461120",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_61010_Burdinne.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_61010_Burdinne.zip",
+    "telecharge_le": "2026-11-14T11:32:59+00:00",
+    "octets": 5197695,
+    "sha256": "1bcfb305c7aa437d626e1099f3153bb50da88bd9b3463f2b6ee17e8b2d3d8132",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_57096_Mouscron_Moeskroen.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_57096_Mouscron_Moeskroen.zip",
+    "telecharge_le": "2026-11-14T11:33:04+00:00",
+    "octets": 15983376,
+    "sha256": "c4e207d66bc5c71692db0a444bb99bdb79d1a49a32d6da67bfbf697125f989a5",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_57095_Mont-de-l'Enclus.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_57095_Mont-de-l'Enclus.zip",
+    "telecharge_le": "2026-11-14T11:33:36+00:00",
+    "octets": 5141694,
+    "sha256": "a8c896b37baad98344e09d16baaee5eefdb7d527f0f84df415fbb8a775efec15",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_57094_Leuze-en-Hainaut.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_57094_Leuze-en-Hainaut.zip",
+    "telecharge_le": "2026-11-14T11:33:39+00:00",
+    "octets": 8889503,
+    "sha256": "62e9bc277d7f81800ec03db3d3dc775cf5950284843916230341f2a6d3ce62bc",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_57093_Brunehaut.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_57093_Brunehaut.zip",
+    "telecharge_le": "2026-11-14T11:33:41+00:00",
+    "octets": 7194042,
+    "sha256": "2d441b5add1ad954ff87a3b5461296d46556be9aee60fdea1d7965187fe1cfb2",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_57081_Tournai.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_57081_Tournai.zip",
+    "telecharge_le": "2026-11-14T11:33:48+00:00",
+    "octets": 25763126,
+    "sha256": "27dc1facdee3632412141a67ae4636ee7c38a724a06b6e96279fbaa41e794207",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_57072_Rumes.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_57072_Rumes.zip",
+    "telecharge_le": "2026-11-14T11:33:49+00:00",
+    "octets": 5689893,
+    "sha256": "d7c9dcfb3ecb1d0a5d6bb486cf3f3d1c75ae2e2850d444c18474eb6ff27d6bdb",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_57064_Péruwelz.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_57064_Péruwelz.zip",
+    "telecharge_le": "2026-11-14T11:33:52+00:00",
+    "octets": 10469081,
+    "sha256": "3f86d9b5462f49ca13d8aeafefb9aa3cc07c65975b8310dd12aa7e2da0063cf2",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_57062_Pecq.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_57062_Pecq.zip",
+    "telecharge_le": "2026-11-14T11:33:53+00:00",
+    "octets": 5774043,
+    "sha256": "e9fcff972bc365941f48faf58ff7e581e8121982bc762e8ab590149cc1bd7d3c",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_57027_Estaimpuis.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_57027_Estaimpuis.zip",
+    "telecharge_le": "2026-11-14T11:33:54+00:00",
+    "octets": 6872729,
+    "sha256": "1b1cdde9f9f474f276e630369c38d3bd7b16a6981d96ba4c47cc4479b7ded7db",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_57018_Celles.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_57018_Celles.zip",
+    "telecharge_le": "2026-11-14T11:33:55+00:00",
+    "octets": 6368843,
+    "sha256": "f42a4a35089a3bee582752b6817f38b2753fab29854d408a78681e0f79405836",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_57097_Comines-Warneton_Komen-Waasten.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_57097_Comines-Warneton_Komen-Waasten.zip",
+    "telecharge_le": "2026-11-14T11:33:56+00:00",
+    "octets": 9527443,
+    "sha256": "a7f65dc791581c72a3024e04173027744e9327261613fdf2362e49cea1c51d3d",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_57003_Antoing.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_57003_Antoing.zip",
+    "telecharge_le": "2026-11-14T11:34:07+00:00",
+    "octets": 6347355,
+    "sha256": "897fb4a3834e00762ae7c7ca1b26e52309ebcbd21539b067b8e455ddcbdfa4cc",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_56086_Ham-sur-Heure-Nalinnes.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_56086_Ham-sur-Heure-Nalinnes.zip",
+    "telecharge_le": "2026-11-14T11:34:09+00:00",
+    "octets": 7558560,
+    "sha256": "819484ba88452722850a4cce21e346f2a7c8abb7eb34484802f79f602cf4ad35",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_56078_Thuin.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_56078_Thuin.zip",
+    "telecharge_le": "2026-11-14T11:34:10+00:00",
+    "octets": 8620065,
+    "sha256": "816c3584d969967907559de53bcc4c077d12fcd4fe8353c1ef471f38b275a465",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_56051_Momignies.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_56051_Momignies.zip",
+    "telecharge_le": "2026-11-14T11:34:13+00:00",
+    "octets": 6281107,
+    "sha256": "e90fbabd2a485e47d36a2c1922c17ac62b7047c24e3f17316bf8bc728c44d8f3",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_56049_Merbes-le-Château.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_56049_Merbes-le-Château.zip",
+    "telecharge_le": "2026-11-14T11:34:14+00:00",
+    "octets": 5177510,
+    "sha256": "e0e4661ac000e163b07b3c8ad90ecbc679b5dd8474afc22d3f38cb7c0aaa6d3d",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_56088_Sivry-Rance.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_56088_Sivry-Rance.zip",
+    "telecharge_le": "2026-11-14T11:34:28+00:00",
+    "octets": 6166252,
+    "sha256": "31150dd6c242f7f6ae345d92b168fe3eef5cf5c17bd91f496c95125158fc8c55",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_56029_Froidchapelle.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_56029_Froidchapelle.zip",
+    "telecharge_le": "2026-11-14T11:34:31+00:00",
+    "octets": 6134418,
+    "sha256": "d5f7c53e87f373d165155c8e8ab5d46fdcc4c96f0e89df743fe12fb9a737deaf",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_56022_Erquelinnes.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_56022_Erquelinnes.zip",
+    "telecharge_le": "2026-11-14T11:34:43+00:00",
+    "octets": 7311966,
+    "sha256": "f46a4481300c9b9ae70282a3f085a55c970f925424859eee21d8ab7f5a150d04",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_56016_Chimay.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_56016_Chimay.zip",
+    "telecharge_le": "2026-11-14T11:34:46+00:00",
+    "octets": 9355002,
+    "sha256": "62f49ad49a95e198826248fccab19e1d8e5dfc4c85d4f87dfd5469f8ccb63183",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_56044_Lobbes.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_56044_Lobbes.zip",
+    "telecharge_le": "2026-11-14T11:34:47+00:00",
+    "octets": 5610331,
+    "sha256": "13be60519a5ddc6a0b6d16f76e40e5a51b208e6fabbeb1a929c8e7510508168c",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_56005_Beaumont.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_56005_Beaumont.zip",
+    "telecharge_le": "2026-11-14T11:34:48+00:00",
+    "octets": 7954981,
+    "sha256": "1b524b204b081073374ca8402bd826ecac448393a2cbdab3909b2e3994a99247",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_55086_Manage.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_55086_Manage.zip",
+    "telecharge_le": "2026-11-14T11:34:50+00:00",
+    "octets": 8667639,
+    "sha256": "223b7609298f500047aacc0c9d3e4131f42db4d6755cff2477b9864eb2b1498c",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_56001_Anderlues.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_56001_Anderlues.zip",
+    "telecharge_le": "2026-11-14T11:35:00+00:00",
+    "octets": 6888854,
+    "sha256": "b1d938816394a526b94530ab5ce8e085d76831532cd4e035cbd58fab31dfa3ad",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_55085_Seneffe.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_55085_Seneffe.zip",
+    "telecharge_le": "2026-11-14T11:35:02+00:00",
+    "octets": 7417580,
+    "sha256": "b35aa88da8630ca074ea2804482790e920f06204a66f31b39244aa909ecbe7b3",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_55050_Ecaussinnes.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_55050_Ecaussinnes.zip",
+    "telecharge_le": "2026-11-14T11:35:02+00:00",
+    "octets": 7048014,
+    "sha256": "66e923407716a44c5cb3061bbcc7d58f276a3a0ed1076027eb808b65c80652f1",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_55035_Le Roeulx.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_55035_Le Roeulx.zip",
+    "telecharge_le": "2026-11-14T11:35:03+00:00",
+    "octets": 6370836,
+    "sha256": "fd6c683311240370ed02a7b5b45235a3cc57d93f66a993c2390297ed90c99f9a",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_55004_Braine-le-Comte.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_55004_Braine-le-Comte.zip",
+    "telecharge_le": "2026-11-14T11:35:05+00:00",
+    "octets": 9813749,
+    "sha256": "71241fa6fe40b8f5e726416473b575490e5ed27247f9ea7b4eab04533052833f",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_55040_Soignies.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_55040_Soignies.zip",
+    "telecharge_le": "2026-11-14T11:35:05+00:00",
+    "octets": 12622710,
+    "sha256": "996d438221e69b8b6af02ab8bd27f4a6c18469a6c9f9bac2d8287d191a818b66",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_53083_Honnelles.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_53083_Honnelles.zip",
+    "telecharge_le": "2026-11-14T11:35:17+00:00",
+    "octets": 6607865,
+    "sha256": "d30621f718ef6872296b5ff8fc9e9c8fc426965b9b4bbcbe8a4ccde5829b8211",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_53084_Quévy.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_53084_Quévy.zip",
+    "telecharge_le": "2026-11-14T11:35:18+00:00",
+    "octets": 7231063,
+    "sha256": "9c509f4507a0a2739d78f647a87196cce53e83bbc0c674e8525b05c8e161d80a",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_53070_Saint-Ghislain.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_53070_Saint-Ghislain.zip",
+    "telecharge_le": "2026-11-14T11:35:22+00:00",
+    "octets": 10460226,
+    "sha256": "c12868c8112185574195c1eda0c34b819bc5f79d711fdcd104fc016e3746dc2c",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_53068_Quiévrain.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_53068_Quiévrain.zip",
+    "telecharge_le": "2026-11-14T11:35:23+00:00",
+    "octets": 5642762,
+    "sha256": "a4dbeab49ade5edcc1596b0863a91779d0c21f285f941f62fdb2a61232adae99",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_53065_Quaregnon.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_53065_Quaregnon.zip",
+    "telecharge_le": "2026-11-14T11:35:25+00:00",
+    "octets": 8298694,
+    "sha256": "175bbef4858180be3d7e8905492c29b8ab5c1d0d78d47d962c1acdfbf5466796",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_53053_Mons.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_53053_Mons.zip",
+    "telecharge_le": "2026-11-14T11:35:31+00:00",
+    "octets": 27922814,
+    "sha256": "1dbb070e2969f549f108c1d08f519645bb8487e2db122b0297ceb0cf16e62000",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_53046_Lens.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_53046_Lens.zip",
+    "telecharge_le": "2026-11-14T11:35:45+00:00",
+    "octets": 5857105,
+    "sha256": "e1c423556b60fa8c223f5e7e8b239322d0ddc4da50de0037de009833798c28b2",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_53044_Jurbise.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_53044_Jurbise.zip",
+    "telecharge_le": "2026-11-14T11:35:46+00:00",
+    "octets": 7404837,
+    "sha256": "ea01c6ee43f5728c9905b84b2a9f351a5ceebf98037c9212e5b1437247c350bb",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_53039_Hensies.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_53039_Hensies.zip",
+    "telecharge_le": "2026-11-14T11:35:48+00:00",
+    "octets": 5962540,
+    "sha256": "021bde4a5c7c02c183ac4671de44e5207d58e2977a58896b80a94cbb093de962",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_53028_Frameries.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_53028_Frameries.zip",
+    "telecharge_le": "2026-11-14T11:36:02+00:00",
+    "octets": 8885707,
+    "sha256": "189f3c37a9e0ec0d85ddb33d44a0077e7ba8c26e2f1cc6e565ecdac15c2085c4",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_53020_Dour.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_53020_Dour.zip",
+    "telecharge_le": "2026-11-14T11:36:04+00:00",
+    "octets": 8779608,
+    "sha256": "c5404e4ce5820dd3ee8798bbe1864a847c65feb4e285c4770d5f75852be0ed1b",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_53014_Boussu.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_53014_Boussu.zip",
+    "telecharge_le": "2026-11-14T11:36:39+00:00",
+    "octets": 8280247,
+    "sha256": "4ce28982696c2b67c9a1e0c4a6f267e63e5d7e9b490153ea32cf6284aecc1111",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_52075_Les Bons Villers.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_52075_Les Bons Villers.zip",
+    "telecharge_le": "2026-11-14T11:36:41+00:00",
+    "octets": 6575223,
+    "sha256": "8cd15c1149aaaec9ff33b6dda50da95d5a1c1354364a85e190b0212f3c67acc7",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_52074_Aiseau-Presles.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_52074_Aiseau-Presles.zip",
+    "telecharge_le": "2026-11-14T11:36:54+00:00",
+    "octets": 6239439,
+    "sha256": "dbc18e686d03610797f654addbb4c6b9d8d127057ebaae34bef88a9fe028bb0f",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_52048_Montigny-le-Tilleul.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_52048_Montigny-le-Tilleul.zip",
+    "telecharge_le": "2026-11-14T11:37:01+00:00",
+    "octets": 5906409,
+    "sha256": "6370199ac73673a3224c6833930d3e342a825274b67e83ccf6f5f2600830f100",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_52025_Gerpinnes.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_52025_Gerpinnes.zip",
+    "telecharge_le": "2026-11-14T11:37:03+00:00",
+    "octets": 7094945,
+    "sha256": "fb1b5a65e688ae0b25e46f9c2247da1621f6d1a43cc0a90e0ef186b73674a574",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_52055_Pont-à-Celles.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_52055_Pont-à-Celles.zip",
+    "telecharge_le": "2026-11-14T11:37:07+00:00",
+    "octets": 8834388,
+    "sha256": "003613df67823e08c79c53ee769e5472d3e3f25e1e254e3d2a38da4c4f3e33db",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_52021_Fleurus.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_52021_Fleurus.zip",
+    "telecharge_le": "2026-11-14T11:37:09+00:00",
+    "octets": 9688916,
+    "sha256": "fab5311f6d09c1de89594ef8003df6f663e6487b5c14d5ece18b12ca361c3d16",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_52018_Farciennes.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_52018_Farciennes.zip",
+    "telecharge_le": "2026-11-14T11:37:10+00:00",
+    "octets": 5858288,
+    "sha256": "059df85564f8a630e17e8efccb88e45e2e5b1041c5bf3cb7d0058f4326545970",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_52015_Courcelles.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_52015_Courcelles.zip",
+    "telecharge_le": "2026-11-14T11:37:13+00:00",
+    "octets": 11518834,
+    "sha256": "f4c5fadae12b57a4a820962a1bc6a365730a8bfb3b40d5efecec3c6bc52778e8",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_52012_Châtelet.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_52012_Châtelet.zip",
+    "telecharge_le": "2026-11-14T11:37:18+00:00",
+    "octets": 11138414,
+    "sha256": "2ee271ba57bd6abcec16a5dfb7165d30cb32896fc78c7b24eae00a5f06469aef",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_52011_Charleroi.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_52011_Charleroi.zip",
+    "telecharge_le": "2026-11-14T11:37:30+00:00",
+    "octets": 48980632,
+    "sha256": "9013ababdb78b5d17f613ce6ffa47a5ac667d3679987955516a982b6bb05087f",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_52010_Chapelle-lez-Herlaimont.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_52010_Chapelle-lez-Herlaimont.zip",
+    "telecharge_le": "2026-11-14T11:37:32+00:00",
+    "octets": 6971196,
+    "sha256": "ce31ddc949f7bd8dacdbe9b3108082c0b2cf3d18cf8f3e356df46ac750fb6af6",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_51069_Lessines.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_51069_Lessines.zip",
+    "telecharge_le": "2026-11-14T11:37:35+00:00",
+    "octets": 10475719,
+    "sha256": "20518bff6bd50fb0b0528accf763a6a85a0f546e895b17b3eafd0f6619d7f492",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_52022_Fontaine-l'Evêque.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_52022_Fontaine-l'Evêque.zip",
+    "telecharge_le": "2026-11-14T11:37:36+00:00",
+    "octets": 7878519,
+    "sha256": "a481fa6d3a24d1ab7eeb392d625f9a1bf651070dcbf22d9c6f8c8a2190a19f6f",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_51068_Silly.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_51068_Silly.zip",
+    "telecharge_le": "2026-11-14T11:37:47+00:00",
+    "octets": 6785412,
+    "sha256": "210e8d81497d920e2cd0ef65fcfdc9cd39a91ea8cc6e0121d3766db5b6b03272",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_51065_Frasnes-lez-Anvaing.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_51065_Frasnes-lez-Anvaing.zip",
+    "telecharge_le": "2026-11-14T11:38:52+00:00",
+    "octets": 9678456,
+    "sha256": "c59d2d8021cb2aebbc04d3bac233778a25e446e2632ac2a4b474595c9da26b31",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_51019_Flobecq_Vloesberg.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_51019_Flobecq_Vloesberg.zip",
+    "telecharge_le": "2026-11-14T11:39:04+00:00",
+    "octets": 5225758,
+    "sha256": "e8e0e2fc19da6e2556c266e278a80ffd98c52d6ff646ab4286e6c1542c7127c8",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_51017_Ellezelles.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_51017_Ellezelles.zip",
+    "telecharge_le": "2026-11-14T11:39:07+00:00",
+    "octets": 6853053,
+    "sha256": "2c434e8f042653566676295666af2ba316f05dfeec5ff47cd95a77895dc2c05d",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_51014_Chièvres.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_51014_Chièvres.zip",
+    "telecharge_le": "2026-11-14T11:39:08+00:00",
+    "octets": 6452581,
+    "sha256": "4cf7561450e2d15258b728557375f341d6924e71655810906226a2f5a979fd6f",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_51009_Bernissart.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_51009_Bernissart.zip",
+    "telecharge_le": "2026-11-14T11:39:23+00:00",
+    "octets": 7575657,
+    "sha256": "03aeeec2c2267f24eaf101ddccc22a6e8cfdd0fa386c09e84562571516769e2e",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_51008_Beloeil.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_51008_Beloeil.zip",
+    "telecharge_le": "2026-11-14T11:39:26+00:00",
+    "octets": 9029072,
+    "sha256": "9ba82f7e958731034ee888fabb5e3fc3d0386bd29960167a73cfee6cee24495f",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_51004_Ath.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_51004_Ath.zip",
+    "telecharge_le": "2026-11-14T11:39:30+00:00",
+    "octets": 13789972,
+    "sha256": "d48856966e97d4089ca47f3e610f63f952c3f90c3e6247b37a7cdb0dea2007ee",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_51012_Brugelette.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_51012_Brugelette.zip",
+    "telecharge_le": "2026-11-14T11:39:41+00:00",
+    "octets": 5065776,
+    "sha256": "089f6b454c58bf8883962262dfefd48fcd868e5aeaf810ae9278ec9cb3897348",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25124_Walhain.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25124_Walhain.zip",
+    "telecharge_le": "2026-11-14T11:40:05+00:00",
+    "octets": 5660890,
+    "sha256": "cc86e99bf36933fcd51d1b3dbd09e4ac8319cf200f1b7de268407a1abdbc6cfe",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25123_Rebecq.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25123_Rebecq.zip",
+    "telecharge_le": "2026-11-14T11:40:14+00:00",
+    "octets": 6738565,
+    "sha256": "f37afe5e12f20037f045819ac314e9b5cee078e620f12122f4e5b3c5f0b46734",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25121_Ottignies-Louvain-la-Neuve.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25121_Ottignies-Louvain-la-Neuve.zip",
+    "telecharge_le": "2026-11-14T11:40:17+00:00",
+    "octets": 9561019,
+    "sha256": "778c05ee428ad7bb11398b2c0f83e55d4ee518c7f52239cf3787f302931b34b8",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25120_Orp-Jauche.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25120_Orp-Jauche.zip",
+    "telecharge_le": "2026-11-14T11:40:19+00:00",
+    "octets": 7738482,
+    "sha256": "6a3626e8138941130b609a928b4bc3b19b0cada93b2efa211926a23b42d268c6",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25119_Lasne.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25119_Lasne.zip",
+    "telecharge_le": "2026-11-14T11:40:32+00:00",
+    "octets": 7831639,
+    "sha256": "1e289f9894d884eedbba8af4d080066b6324df2830e0fbde1b324f11dc991101",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25122_Ramillies.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25122_Ramillies.zip",
+    "telecharge_le": "2026-11-14T11:40:37+00:00",
+    "octets": 6544472,
+    "sha256": "edb49e5213c9a02700b85793f16560fe23473f53e8e66b0c7deef5a528af829c",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25117_Chastre.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25117_Chastre.zip",
+    "telecharge_le": "2026-11-14T11:40:39+00:00",
+    "octets": 5478692,
+    "sha256": "07fa13eb1c484410d7e8ea9792f215d3932c09f65b874c783590816d06d3cdc6",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25112_Wavre.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25112_Wavre.zip",
+    "telecharge_le": "2026-11-14T11:40:43+00:00",
+    "octets": 10443959,
+    "sha256": "2ee4d01074a08542153693cdd5be9abdd9b0b56da500ada84e6094cffd5bbdf2",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25110_Waterloo.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25110_Waterloo.zip",
+    "telecharge_le": "2026-11-14T11:41:16+00:00",
+    "octets": 8980501,
+    "sha256": "d6f3b1deb3ec5d562c3074b2a7ffca3ff5fea5f5ddf7a71113b358df74d13a7b",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25118_Hélécine.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25118_Hélécine.zip",
+    "telecharge_le": "2026-11-14T11:41:36+00:00",
+    "octets": 4905874,
+    "sha256": "e29ecb85e19ad2197bf4a3ca87306088dfa015b5db398b49ebf9cac2d9816142",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25105_Tubize.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25105_Tubize.zip",
+    "telecharge_le": "2026-11-14T11:41:39+00:00",
+    "octets": 8926508,
+    "sha256": "2872ad6152bec3b9a9933b41e08b16a5548eea73034a5264e90574c40e544378",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25091_Rixensart.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25091_Rixensart.zip",
+    "telecharge_le": "2026-11-14T11:41:42+00:00",
+    "octets": 7967982,
+    "sha256": "b025dbeae218bf91852c22f25522f42b37f654e9086625f211c6457fa673f0c8",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25084_Perwez.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25084_Perwez.zip",
+    "telecharge_le": "2026-11-14T11:41:43+00:00",
+    "octets": 6063698,
+    "sha256": "f0e08c326101934e23b6affa2748add714e545b4ae26c823e13c9a51d165a735",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25072_Nivelles.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25072_Nivelles.zip",
+    "telecharge_le": "2026-11-14T11:41:45+00:00",
+    "octets": 9148362,
+    "sha256": "8d7ebdcfab6e56fec14ec92bc941722328bb336763b18b3a80eec16c7ff326af",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25068_Mont-Saint-Guibert.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25068_Mont-Saint-Guibert.zip",
+    "telecharge_le": "2026-11-14T11:41:46+00:00",
+    "octets": 5123751,
+    "sha256": "a0bbd69287098681e874d13f533542956a06075e5cde3ce43bb0970a3930f1cc",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25050_La Hulpe.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25050_La Hulpe.zip",
+    "telecharge_le": "2026-11-14T11:42:19+00:00",
+    "octets": 5044389,
+    "sha256": "8f3f1a33092a0e22c660eabbe789a768f8d6c0bb0666557e5ad9e1b8d3cf2ac6",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25107_Villers-la-Ville.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25107_Villers-la-Ville.zip",
+    "telecharge_le": "2026-11-14T11:42:20+00:00",
+    "octets": 6876967,
+    "sha256": "a15bf25d5cef46ca60b3bbaa32448c6fa2e4d49a021434d95772c1d975cd4bec",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25044_Ittre.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25044_Ittre.zip",
+    "telecharge_le": "2026-11-14T11:42:23+00:00",
+    "octets": 5915205,
+    "sha256": "b6761e4ba19b94b62a425be846317150a092cf34337f37ba16d2cec3f8183cb9",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25048_Jodoigne.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25048_Jodoigne.zip",
+    "telecharge_le": "2026-11-14T11:42:24+00:00",
+    "octets": 9469159,
+    "sha256": "dd38f6e9d989be9ec3b28379b74add66e72223df77adf89f317f445b1ce8bef4",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25043_Incourt.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25043_Incourt.zip",
+    "telecharge_le": "2026-11-14T11:42:34+00:00",
+    "octets": 5769834,
+    "sha256": "f848697477cf6c950fc6489a880b3d3b67e5c6f34e0a4ccfa1538467055e5be7",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25031_Genappe.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25031_Genappe.zip",
+    "telecharge_le": "2026-11-14T11:42:36+00:00",
+    "octets": 8498737,
+    "sha256": "db81e81922798ba7ac015a744a0cb08e8ee4acfb18f23261b6d80777ccb0d97a",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25023_Court-Saint-Etienne.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25023_Court-Saint-Etienne.zip",
+    "telecharge_le": "2026-11-14T11:42:40+00:00",
+    "octets": 6024845,
+    "sha256": "3c1d45920bf93632d5728adea9ef0df3033745d063f64449d94e6eddde7ee4d5",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25018_Chaumont-Gistoux.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25018_Chaumont-Gistoux.zip",
+    "telecharge_le": "2026-11-14T11:42:41+00:00",
+    "octets": 7007382,
+    "sha256": "d73b1e979b21ceabd3351948b5c025300365123735a337dcb5a8708c80d09ef5",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25015_Braine-le-Château.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25015_Braine-le-Château.zip",
+    "telecharge_le": "2026-11-14T11:43:14+00:00",
+    "octets": 6252773,
+    "sha256": "8cbe277d584a1bf33af6a365cde8a46fffc09c32bd88be4f85c2975f0fb48671",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25014_Braine-l'Alleud.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25014_Braine-l'Alleud.zip",
+    "telecharge_le": "2026-11-14T11:43:16+00:00",
+    "octets": 11354362,
+    "sha256": "ce19c30291e45c2fe4c3d1195977fe6474595342e7871ea10fb5eeb434cb95fc",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25005_Beauvechain.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25005_Beauvechain.zip",
+    "telecharge_le": "2026-11-14T11:43:18+00:00",
+    "octets": 6228339,
+    "sha256": "6884f4bf85c3b1226a01d099c7625be8dea1abd80c1e1a83219b3051f6972f67",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_82009_Fauvillers.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_82009_Fauvillers.zip",
+    "telecharge_le": "2026-11-14T11:44:38+00:00",
+    "octets": 7079813,
+    "sha256": "785fd1ed1fdd13f4333c761bed52bed85fc90ed7173b6a13f263a2a2cb66d12f",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_81015_Messancy.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_81015_Messancy.zip",
+    "telecharge_le": "2026-11-14T11:44:39+00:00",
+    "octets": 7927235,
+    "sha256": "9b38a1cda61d0a2b0d07ca3fae52198a601672ad52134d55850dcd42b955b01f",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_83013_Erezée.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_83013_Erezée.zip",
+    "telecharge_le": "2026-11-14T11:44:57+00:00",
+    "octets": 7524163,
+    "sha256": "fb7d50f821ff79c768c3ad70e776fc1218db85752fe9251caf3d7148f7964c50",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_62026_Comblain-au-Pont.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_62026_Comblain-au-Pont.zip",
+    "telecharge_le": "2026-11-14T11:44:59+00:00",
+    "octets": 5437032,
+    "sha256": "9ba5336bba5e09e1980f8fac4b4ada969aa1bd0b24fd8d6fb4804e88d24bb8e7",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_53082_Colfontaine.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_53082_Colfontaine.zip",
+    "telecharge_le": "2026-11-14T11:45:11+00:00",
+    "octets": 9069770,
+    "sha256": "ee1c4dd6cb34a88cb5e8646a2a42a6a5d4a7a0db92c3f999ac99fe69d9bffb94",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_63080_Waimes_Weismes.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_63080_Waimes_Weismes.zip",
+    "telecharge_le": "2026-11-14T11:45:12+00:00",
+    "octets": 7612241,
+    "sha256": "76949db4689a43a087b59a1d9ab72119b63c550add2ad53965a914aa6173594b",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_25037_Grez-Doiceau.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_25037_Grez-Doiceau.zip",
+    "telecharge_le": "2026-11-14T11:45:13+00:00",
+    "octets": 7953036,
+    "sha256": "ae4d3fffad5b262708a28c3ce98478acfd049e25b4e3ea661b429e5f0bfadafd",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "spf_plan_parcellaire/PP-FiscSit_20250101_shp_31370_51067_Enghien_Edingen.zip": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/PP-FiscSit_20250101_shp_31370_51067_Enghien_Edingen.zip",
+    "telecharge_le": "2026-11-14T11:45:44+00:00",
+    "octets": 6606004,
+    "sha256": "ce6bb2586d467f5a6bd15a7f84305e3b4fd095e3344f2505f8f8aa98d7f1c1d6",
+    "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
   }
 }

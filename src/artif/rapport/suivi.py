@@ -1,7 +1,7 @@
 """Confrontation de la consommation observée aux trajectoires de réduction de l'artificialisation nette."""
 import pandas as pd
 
-from .config import BASELINE, SAUT_K_MAD, SAUT_SEUIL_MIN_HA, TRAJ_END, TRAJ_START
+from ..config import BASELINE, SAUT_K_MAD, SAUT_SEUIL_MIN_HA, TRAJ_END, TRAJ_START
 
 
 def trajectory_factor(year: int, start: int = TRAJ_START, end: int = TRAJ_END) -> float:

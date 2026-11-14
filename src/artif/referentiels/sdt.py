@@ -8,8 +8,8 @@ import numpy as np
 import pandas as pd
 import pymupdf
 
-from .config import PROCESSED, RAW, REFERENCES, REPORT_FIGURES, SDT_PDF_URL, TRAJ_END, TRAJ_START
-from .sources import fetch
+from ..config import PROCESSED, RAW, REFERENCES, REPORT_FIGURES, SDT_PDF_URL, TRAJ_END, TRAJ_START
+from ..sources import fetch
 
 # Ordre des graphiques dans le document (vérifié visuellement, voir report/figures/sdt_numerisation.png)
 ARTIF_PAGES = {40: ["Hainaut 1", "Hainaut 2"], 41: ["Brabant wallon", "Namur", "Luxembourg"],

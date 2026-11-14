@@ -1,13 +1,13 @@
 """Calculs de l'étude : séries communales, validation, évaluation, sensibilité, diagnostics.
 
 Chaque fonction renvoie des DataFrames ; `run()` les écrit dans data/processed/ et les rassemble
-dans un dictionnaire consommé par les modules `figures` et `rapport`.
+dans un dictionnaire consommé par les modules `figures` et `latex`.
 """
 import numpy as np
 import pandas as pd
 
 from . import cadastre, suivi
-from .config import (BASELINE, DEFINITION_PRINCIPALE, DEFINITIONS, PROCESSED, REFERENCES, TRAJ_END,
+from ..config import (BASELINE, DEFINITION_PRINCIPALE, DEFINITIONS, PROCESSED, REFERENCES, TRAJ_END,
                      TRAJ_START)
 
 WALLONIE = "Wallonie (hors Communauté germanophone)"

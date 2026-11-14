@@ -7,8 +7,8 @@ import urllib.parse
 
 import pandas as pd
 
-from .config import RAW, REFERENCES, SPW_DIREXT_LAYER
-from .sources import fetch_json
+from ..config import RAW, REFERENCES, SPW_DIREXT_LAYER
+from ..sources import fetch_json
 
 PROVINCES = {"25": "Brabant wallon", "5": "Hainaut", "6": "Liège", "8": "Luxembourg", "9": "Namur"}
 
