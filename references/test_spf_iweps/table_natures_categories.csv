@@ -1,0 +1,252 @@
+﻿nature,libelle,categorie,source,coef_max,somme_coef,ha_2023,artificialise
+1,Terre agricole,arable,donnees,1.0,1.0,461757.0,False
+2,Pâture,herbe,donnees,1.0,1.0,309010.4,False
+3,Pré,herbe,donnees,1.0,1.0,65816.1,False
+4,Jardin,resid,donnees,0.997,1.0,8074.7,True
+5,Terrain maraicher,arable,donnees,0.973,1.014,225.2,False
+6,Pré alluvial,herbe,donnees,0.72,1.904,7.6,False
+7,Pré embouche,herbe,libelle,0.0,0.0,0.0,False
+8,Patsart,seminat,donnees,0.998,1.004,6714.2,False
+9,Bois,foret,donnees,1.0,1.0,494456.1,False
+10,Verger haute tige,arable,donnees,0.999,1.0,14565.7,False
+11,Verger basse tige,arable,donnees,1.001,1.004,964.7,False
+12,Vignoble,arable,libelle,0.0,0.0,0.0,False
+13,Pépinière,arable,donnees,0.999,1.066,669.3,False
+14,Exploitation de sapins de Noël,arable,donnees,0.997,1.012,1203.3,False
+17,Parc,loisirs,donnees,0.979,0.979,4308.5,True
+18,Terrain de sport,loisirs,donnees,0.993,0.999,2621.3,True
+20,Plaine de jeux,loisirs,donnees,0.886,0.89,344.9,True
+21,Terrain de camping,loisirs,donnees,1.004,1.087,626.7,True
+22,Piscine,equip,libelle,1.793,4.274,3.9,True
+24,Point d’eau,eau,donnees,1.071,1.39,61.9,False
+25,Mare,eau,donnees,0.617,0.963,69.1,False
+26,Etang,eau,donnees,0.975,1.015,2889.0,False
+27,Lac,eau,donnees,0.976,1.004,416.4,False
+28,Douve,eau,libelle,1.278,6.034,11.8,False
+29,Fosse,eau,donnees,1.028,1.14,152.1,False
+30,Pisciculture,eau,donnees,1.156,1.834,81.1,False
+33,Chemin cadastré,transport,donnees,0.972,0.976,4511.5,True
+34,Place,transport,libelle,0.632,0.632,146.6,True
+35,Terrain vain ou vague,seminat,donnees,0.997,1.0,34051.8,False
+36,Bruyère,seminat,donnees,0.978,1.07,502.0,False
+38,Marais,humide,donnees,1.0,1.03,1073.5,False
+39,Fagne,humide,donnees,1.0,1.003,4730.3,False
+41,Alluvion,seminat,libelle,0.333,1.067,3.9,False
+42,Dune,seminat,libelle,0.0,0.0,0.0,False
+43,Rempart,autres_art,libelle,1.098,1.098,3.8,True
+44,Digue,equip,donnees,0.989,1.599,21.6,True
+45,Terril vain ou vague,seminat,donnees,1.001,1.016,1400.4,False
+46,Terrain d’épandage vain ou vague,seminat,donnees,0.872,1.081,60.0,False
+49,Terrain d’épandage exploite,carrieres,donnees,0.821,0.996,97.9,True
+50,Terrain industriel,indus,donnees,0.978,0.982,1610.6,True
+51,Chantier,indus,donnees,0.922,0.922,123.0,True
+52,Quai,transport,libelle,1.316,2.524,13.1,True
+54,Bassin industriel,indus,donnees,1.005,1.023,210.2,True
+55,Chemin de fer,transport,donnees,0.985,1.001,258.7,True
+56,Terril exploite,carrieres,donnees,1.01,1.121,52.6,True
+57,Carrière,carrieres,donnees,0.994,1.005,2195.4,True
+59,Canal,eau,donnees,1.057,1.449,108.1,False
+62,Tumulus,autres_art,libelle,0.545,1.846,3.2,True
+63,Borne,autres_art,libelle,97.235,200.955,0.1,True
+67,Superficie d’un bâtiment ordinaire,resid,donnees,0.989,0.989,796.3,True
+68,Superficie d’un bâtiment exceptionnel,autres_art,libelle,0.865,0.865,124.9,True
+69,Superficie d’un bâtiment industriel,indus,donnees,0.997,1.005,894.1,True
+70,Terrain,herbe,donnees,0.993,0.995,11570.6,False
+71,Parking,transport,donnees,0.996,1.019,816.7,True
+72,Champ d’aviation,transport,donnees,0.998,1.033,395.8,True
+73,Terrain militaire,equip,donnees,0.999,1.0,6180.3,True
+74,Cimetière,equip,donnees,0.988,0.988,1261.4,True
+75,Oseraie,herbe,donnees,1.068,1.411,107.7,False
+76,Bassin ordinaire,equip,donnees,1.008,1.178,348.3,True
+77,Cour,resid,donnees,1.029,1.029,248.8,True
+78,Terrain à bâtir,herbe,donnees,0.985,0.985,4304.3,False
+79,Partie de parc de stationnement,resid,libelle,2.36,8.78,0.9,True
+80,Matériel et outillage non-bâti,indus,libelle,1.004,1.193,43.7,True
+85,Bassin de décantation,indus,libelle,111.844,210.873,0.0,True
+86,Rouissoir,indus,libelle,0.0,0.0,0.0,True
+87,Bassin de matériel et outillage,indus,libelle,11.423,38.187,0.4,True
+164,Parties communes générales d'un bâtiment,resid,libelle,0.988,0.988,2689.7,True
+165,Parties communes spécifiques d'un bâtiment,resid,libelle,0.197,0.224,26.2,True
+166,Superficie d’un bâtiment (autre),resid,libelle,0.944,0.944,204.3,True
+170,Autre non bâti,inconnu,libelle,0.0,0.0,0.0,False
+200,Maison,resid,donnees,1.0,1.0,96073.7,True
+201,Baraquement,resid,libelle,0.838,1.597,10.7,True
+202,Taudis,resid,donnees,1.074,2.909,25.5,True
+203,Remise,resid,donnees,0.92,0.92,553.5,True
+204,Garage,resid,donnees,1.013,1.013,994.8,True
+205,Abri,resid,donnees,0.867,1.392,48.2,True
+206,Toilettes,resid,donnees,0.997,1.726,13.8,True
+220,Entité privative#,resid,libelle,15.549,53.938,0.6,True
+221,Entités privatives,resid,libelle,89.147,219.144,0.0,True
+222,Building,resid,libelle,0.945,0.945,579.7,True
+223,Maison#,resid,libelle,0.826,1.989,37.0,True
+240,Ferme,agri_bat,donnees,0.98,0.98,5589.1,True
+241,Ecurie,agri_bat,donnees,0.941,1.185,114.6,True
+242,Pigeonnier,agri_bat,libelle,1.554,6.691,2.9,True
+243,Petit élevage,agri_bat,donnees,0.832,1.116,67.8,True
+244,Grand élevage,agri_bat,donnees,0.992,1.132,370.6,True
+245,Serre,agri_bat,donnees,0.992,0.995,198.7,True
+246,Champignonnière,agri_bat,libelle,1.149,2.515,1.0,True
+247,Bâtiment rural,agri_bat,donnees,1.009,1.011,4401.5,True
+260,Imprimerie,indus,donnees,1.115,1.117,73.7,True
+261,Garage atelier,indus,donnees,0.897,0.948,1108.6,True
+262,Forge,indus,libelle,2.314,5.294,2.9,True
+263,Menuiserie,indus,libelle,0.75,0.8,227.3,True
+264,Lavoir,indus,donnees,1.33,2.33,17.8,True
+265,Atelier,indus,donnees,0.99,0.99,1277.1,True
+280,Laiterie,indus,donnees,1.11,2.117,19.6,True
+281,Boulangerie,indus,donnees,1.015,1.015,62.6,True
+282,Charcuterie,indus,donnees,1.009,1.464,32.0,True
+283,Abattoir,indus,donnees,0.927,0.995,45.3,True
+284,Fabrique d’aliments à bétail,indus,donnees,0.841,1.313,17.9,True
+285,Fabrique de café,indus,libelle,1.806,3.266,1.6,True
+286,Brasserie,indus,libelle,0.999,1.728,46.3,True
+287,Fabrique de boissons,indus,donnees,0.762,0.96,60.0,True
+288,Fabrique de tabac,indus,libelle,0.726,1.685,0.1,True
+289,Meunerie,indus,libelle,0.649,1.432,18.4,True
+290,Fabrique de produits alimentaires,indus,donnees,1.017,1.024,393.2,True
+300,Fabrique d’habillement,eau,donnees,2.099,4.613,3.4,False
+301,Usine textile,indus,donnees,1.031,1.042,74.3,True
+302,Fabrique d’articles de cuir,indus,libelle,0.601,2.515,2.9,True
+303,Fabrique de meubles,indus,donnees,0.752,0.752,29.6,True
+304,Fabrique de jouets,indus,libelle,0.0,0.0,0.0,True
+305,Papeterie,indus,donnees,0.992,1.078,112.7,True
+306,Fabrique d’articles usuels,indus,donnees,1.064,2.151,4.2,True
+320,Briqueterie,indus,donnees,1.073,1.18,55.9,True
+321,Cimenterie,indus,donnees,1.019,1.106,152.8,True
+322,Scierie,indus,donnees,1.007,1.181,222.9,True
+323,Fabrique de couleurs,indus,donnees,1.023,1.711,10.3,True
+324,Fabrique de matériaux de construction,indus,donnees,0.999,1.006,595.7,True
+340,Métallurgie,indus,donnees,1.005,1.01,589.3,True
+341,Haut fourneau,indus,donnees,0.793,1.656,0.8,True
+342,Four chaux,indus,donnees,0.981,1.238,71.3,True
+343,Atelier de construction,indus,donnees,1.017,1.035,391.9,True
+344,Fabrique de matériel électrique,indus,donnees,1.081,1.201,75.6,True
+345,Raffinerie de pétrole,indus,donnees,2.04,6.348,1.5,True
+346,Usine chimique,indus,donnees,1.015,1.025,589.1,True
+347,Fabrique de caoutchouc,indus,donnees,0.902,1.002,35.6,True
+348,Glacière,indus,libelle,241.671,507.326,0.0,True
+349,Verrerie,indus,donnees,1.02,1.255,71.3,True
+350,Fabrique de plastique,indus,donnees,1.098,1.32,76.7,True
+351,Fabrique de céramique,indus,donnees,0.96,1.74,16.4,True
+352,Charbonnage,indus,donnees,0.968,1.082,33.8,True
+353,Centrale électrique,indus,donnees,0.951,0.951,263.9,True
+354,Usine de gaz,indus,libelle,0.995,1.133,31.1,True
+355,Gazomètre,indus,libelle,0.382,0.675,5.1,True
+356,Cokerie,indus,donnees,1.089,1.284,8.0,True
+357,Bâtiment industriel,indus,donnees,1.025,1.032,1995.5,True
+370,Hangar,indus,libelle,0.766,0.859,304.6,True
+371,Entrepôt,indus,donnees,1.0,1.0,5065.9,True
+372,Cabine électrique,equip,libelle,1.037,1.054,143.1,True
+373,Pylône,equip,libelle,1.082,1.821,9.7,True
+374,Cabine à gaz,equip,libelle,1.108,1.817,20.5,True
+375,Cabine,equip,libelle,1.423,1.877,25.5,True
+376,Réservoir,indus,donnees,0.909,0.976,125.8,True
+377,Silo,indus,donnees,1.082,1.45,32.9,True
+378,Centre de recherche,comm,donnees,1.048,1.166,253.8,True
+379,Séchoir,indus,libelle,1.044,3.74,2.4,True
+380,Installation frigorifique,indus,donnees,0.909,1.065,49.6,True
+381,Matériel et outillage bâti,indus,donnees,1.012,1.018,526.2,True
+382,Exploitation industrielle#,indus,libelle,0.788,2.031,3.8,True
+400,Banque,comm,libelle,1.938,2.047,39.9,True
+401,Bourse,comm,libelle,0.0,0.0,0.0,True
+402,Bâtiment de bureaux,comm,libelle,0.922,0.927,684.3,True
+403,Café,comm,libelle,0.447,0.8,27.1,True
+404,Hôtel,comm,libelle,0.824,0.824,226.3,True
+405,Restaurant,comm,libelle,0.768,0.794,120.5,True
+406,Salle de fêtes,equip,donnees,1.169,1.252,223.3,True
+407,Maison de commerce,comm,libelle,0.836,0.836,1598.4,True
+408,Grand magasin,comm,donnees,1.02,1.02,1553.8,True
+409,Garage dépôt,transport,donnees,1.056,1.056,299.8,True
+410,Bâtiment de parking,equip,donnees,0.296,0.414,24.9,True
+411,Station-service,comm,donnees,0.932,0.935,197.6,True
+412,Marché couvert,comm,libelle,0.744,1.824,25.7,True
+413,Salle d’exposition,equip,donnees,0.992,1.052,241.0,True
+414,Kiosque,comm,libelle,2.01,6.929,2.1,True
+415,Bâtiment pour animaux,agri_bat,donnees,1.01,1.062,236.3,True
+420,Maison communale,equip,libelle,0.851,1.262,69.1,True
+421,Bâtiment de gouvernement,equip,libelle,2.413,4.088,5.3,True
+422,Palais royal,equip,libelle,0.0,0.0,0.0,True
+423,Bâtiment de justice,equip,libelle,1.054,2.867,15.4,True
+424,Bâtiment pénitentiaire,equip,libelle,0.998,1.137,103.5,True
+425,Légation,equip,libelle,7.824,35.946,0.3,True
+426,Bâtiment de police,equip,libelle,0.864,0.864,70.7,True
+427,Bâtiment militaire,equip,donnees,0.993,1.009,777.1,True
+428,Station,transport,libelle,0.455,0.549,29.9,True
+429,Abri de transports,transport,libelle,1.326,3.555,6.2,True
+430,Cabine téléphonique,equip,libelle,6.883,22.239,0.4,True
+431,Bâtiment de télécommunication,equip,libelle,0.494,0.709,59.4,True
+432,Aéroport,transport,donnees,0.992,0.994,466.0,True
+433,Bâtiment funéraire,equip,libelle,0.544,0.544,69.4,True
+434,Bâtiment administratif,equip,donnees,1.002,1.06,695.8,True
+440,Orphelinat,equip,libelle,1.054,1.212,16.0,True
+441,Crèche,equip,donnees,0.594,1.019,53.1,True
+442,Atelier protégé,equip,donnees,0.998,1.09,107.8,True
+443,Maison de repos,equip,donnees,0.977,0.992,496.7,True
+444,Bâtiment hospitalier,equip,donnees,1.039,1.039,475.8,True
+445,Etablissement de cure,equip,donnees,0.897,1.144,8.4,True
+446,Bâtiment d’aide sociale,equip,donnees,0.954,1.025,479.6,True
+460,Bâtiment scolaire,equip,donnees,0.955,0.961,2615.6,True
+461,Université,equip,libelle,1.055,1.134,62.8,True
+462,Musée,equip,libelle,0.758,0.952,43.6,True
+463,Bibliothèque,equip,libelle,2.374,2.374,12.6,True
+480,Eglise,equip,libelle,0.0,0.0,214.2,True
+481,Chapelle,equip,libelle,0.0,0.0,39.5,True
+482,Couvent,equip,libelle,0.828,1.044,77.8,True
+483,Presbytère,equip,libelle,1.168,1.525,93.4,True
+484,Séminaire,equip,libelle,3.752,15.893,2.5,True
+485,Evêché,equip,libelle,76.956,85.98,0.2,True
+486,Synagogue,equip,libelle,36.754,109.248,0.1,True
+487,Mosquée,equip,libelle,1.196,1.196,6.3,True
+488,Temple,equip,libelle,1.665,4.637,14.8,True
+489,Bâtiment de culte,equip,libelle,1.101,1.101,36.6,True
+500,Etablissement de bains,equip,donnees,0.946,1.071,47.8,True
+501,Installation sportive,equip,donnees,1.005,1.006,2332.3,True
+502,Home vacances,loisirs,donnees,1.072,1.229,161.6,True
+503,Habitation de vacances,loisirs,donnees,0.993,1.01,1771.0,True
+504,Maison de jeunes,equip,donnees,1.387,1.408,84.9,True
+505,Théâtre,equip,libelle,2.077,3.551,2.8,True
+506,Salle de spectacles,equip,libelle,0.359,0.46,32.7,True
+507,Centre culturel,equip,donnees,1.003,1.016,144.2,True
+508,Cinéma,equip,libelle,1.627,2.358,16.9,True
+509,Casino,equip,libelle,1.016,1.705,2.8,True
+510,Point de vue,autres_art,libelle,5.465,18.481,1.0,True
+520,Ruines,carrieres,donnees,0.901,0.998,582.6,True
+521,Souterrain,autres_art,libelle,2.844,6.836,2.0,True
+522,Pavillon,equip,donnees,0.97,1.028,117.8,True
+523,Château,resid,donnees,0.996,1.031,515.1,True
+524,Bâtiment historique,autres_art,libelle,0.196,0.364,38.1,True
+525,Monument,autres_art,libelle,1.098,1.205,15.1,True
+526,Moulin à vent,autres_art,libelle,1.606,4.694,1.1,True
+527,Moulin à eau,autres_art,libelle,2.959,10.622,1.0,True
+528,Château d’eau,equip,donnees,1.534,1.926,48.3,True
+529,Captage d’eau,equip,donnees,1.023,1.023,186.3,True
+530,Installation d’épuration,equip,donnees,0.913,0.931,366.9,True
+531,Traitement des immondices,equip,donnees,0.946,0.946,228.6,True
+532,Cave #,resid,libelle,0.0,0.0,0.0,True
+533,Chambre #,resid,libelle,0.0,0.0,0.0,True
+534,Studio #,resid,libelle,0.0,0.0,0.0,True
+535,Commerce #,comm,libelle,7.162,31.961,0.5,True
+536,Bureau #,comm,libelle,0.0,0.0,0.0,True
+537,Appartement #,resid,libelle,0.0,0.0,0.0,True
+538,Parties communes générales non bâties,resid,libelle,0.939,1.565,49.8,True
+539,Autre bâti,autres_art,libelle,1.03,1.051,132.9,True
+540,Autre non bâti,inconnu,libelle,5.428,27.614,0.2,False
+541,Droit sup./emph.,resid,libelle,17.251,62.718,0.1,True
+542,Entité d’exploitation #,comm,libelle,0.0,0.0,0.0,True
+543,Garage box #,resid,libelle,0.0,0.0,0.0,True
+544,Parking couvert #,resid,libelle,0.0,0.0,0.0,True
+545,Parking non-couvert #,resid,libelle,4.898,11.521,0.1,True
+546,Réserve #,resid,libelle,0.0,0.0,0.0,True
+547,Vitrine #,comm,libelle,0.0,0.0,0.0,True
+549,Entité privative diverse #,resid,libelle,1.469,2.539,0.0,True
+550,Cabine #,equip,libelle,3049.186,5052.677,0.0,True
+551,Partie commune spécifique non bâtie,resid,libelle,1.614,2.358,23.2,True
+552,Superficie et parties communes,resid,libelle,0.979,0.979,1333.1,True
+553,Parties communes,resid,libelle,0.0,0.0,0.0,True
+554,Panneau solaire,indus,libelle,0.0,0.0,0.0,True
+555,Superficie bâtie,resid,libelle,1.237,2.465,59.2,True
+556,Volume entier,resid,libelle,0.0,0.0,0.0,True
+557,Volume limité,resid,libelle,0.0,0.0,0.0,True
+558,Volume semi-limité,resid,libelle,12.644,21.651,0.9,True
+559,Domaine public,resid,libelle,33.822,105.467,0.1,True

@@ -1,0 +1,33 @@
+# Dépôt de la chaîne de calcul. Le site (portail/) a son propre dépôt.
+portail/
+
+# Données : jamais dans ce dépôt. Elles se retéléchargent à la source (voir MISE_A_JOUR.md).
+# data/raw/atol/ (ATOL-C, « All rights reserved ») et dirext_communes.geojson ne doivent jamais être redistribués.
+data/
+# Sauf le journal des téléchargements : adresse, date, taille et empreinte de chaque fichier.
+!data/
+data/*
+!data/raw/
+data/raw/*
+!data/raw/PROVENANCE.json
+
+# Environnements et fichiers générés
+.venv/
+__pycache__/
+tests/node_modules/
+.claude/settings.local.json
+
+# Fichiers intermédiaires de LaTeX
+report/*.aux
+report/*.bbl
+report/*.blg
+report/*.fdb_latexmk
+report/*.fls
+report/*.log
+report/*.toc
+report/latexmk.out
+
+# Notes de travail, jamais publiées
+CLAUDE.md
+.claude/
+references/etat_de_l_art_et_diffusion.md

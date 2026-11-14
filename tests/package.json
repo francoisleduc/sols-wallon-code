@@ -1,0 +1,9 @@
+{
+  "name": "sols-wallons-tests",
+  "private": true,
+  "description": "Pilotage du navigateur pour verifier_affichage.mjs",
+  "type": "module",
+  "dependencies": {
+    "playwright-core": "1.48.2"
+  }
+}

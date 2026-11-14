@@ -1,0 +1,268 @@
+{
+  "sdt/sdt-web-pages.pdf": {
+    "url": "https://territoire.wallonie.be/storage/territoire/documents/content/publication/sdt-web-pages.pdf",
+    "telecharge_le": "2026-10-28T12:00:20+00:00",
+    "octets": 29009965,
+    "sha256": "18d3e65063945bdd483f6ef326d12296a7deb6be0684ca8430d6a4c736dcd32d",
+    "note": "SDT 2024, version publiée"
+  },
+  "spw/dirext_attributs.json": {
+    "url": "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/DIREXT/MapServer/0/query?where=1%3D1&outFields=ADMUKEY%2CADMUNAFR%2CREFERENTIEL%2CDIREXT%2CDATETRANS&returnGeometry=false&f=json",
+    "telecharge_le": "2026-10-28T12:00:11+00:00",
+    "octets": 41406,
+    "sha256": "c77fc04bd7fde722514c221892f58220a6f22d1df83bdde9e69686974585388e",
+    "note": "Ressorts des fonctionnaires délégués"
+  },
+  "spw/dirext_communes.geojson": {
+    "url": "https://geoservices.wallonie.be/arcgis/rest/services/AMENAGEMENT_TERRITOIRE/DIREXT/MapServer/0/query?where=1%3D1&outFields=ADMUKEY&returnGeometry=true&outSR=4326&maxAllowableOffset=0.0005&geometryPrecision=5&f=geojson",
+    "telecharge_le": "2026-10-28T12:00:15+00:00",
+    "octets": 691115,
+    "sha256": "e832078fcc8500ee16fd365fc36807d206727cde12157816a4a8babcf9f804d6",
+    "note": "Géométries communales simplifiées"
+  },
+  "statbel_occupation_sol/TF_EAE_LAND_OCCUPTN_sqlite.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/Bodembezetting%20volgens%20het%20Kadasterregister/TF_EAE_LAND_OCCUPTN_sqlite.zip",
+    "telecharge_le": "2026-10-28T12:00:25+00:00",
+    "octets": 23005210,
+    "sha256": "607a4e44317128bf0d2526c2391c0fc387cc48e35937275d7dee05fe95b8a6c5",
+    "note": "Statbel - Occupation du sol selon le registre cadastral, 1983-2025"
+  },
+  "cpdt/CPDT_RF_Dec_2025_Annexe_CR_InfoTer.1_Note_preparatoire.pdf": {
+    "url": "https://cpdt.wallonie.be/wp-content/uploads/2022/12/CPDT_RF_Dec_2025_Annexe_CR_InfoTer.1_Note_preparatoire.pdf",
+    "telecharge_le": "2026-11-04T21:34:27+00:00",
+    "octets": 12115718,
+    "sha256": "e515c53d4619a663423401c62404377a9c9ddc60307299139f74c4569fdd6407",
+    "note": "CPDT, note préparatoire au rapport triennal (déc. 2025)"
+  },
+  "spf_occupation_sol/communes_2011.csv.gz": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_20110101_csv_NA_01000.zip",
+    "telecharge_le": "2026-11-07T14:52:09+00:00",
+    "octets": 264288,
+    "sha256": "52b3c4c116da347f7bd8ff98e0613ed0570be499591cfd845edff73c863db65b",
+    "note": "lignes wallonnes du fichier communal, natures numériques seulement"
+  },
+  "spf_occupation_sol/communes_2012.csv.gz": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_20120101_csv_NA_01000.zip",
+    "telecharge_le": "2026-11-07T14:52:09+00:00",
+    "octets": 264408,
+    "sha256": "996bd31009b0707ff87b986645bf6f96fd3f1a55273963df8d3868746b56e421",
+    "note": "lignes wallonnes du fichier communal, natures numériques seulement"
+  },
+  "spf_occupation_sol/communes_2013.csv.gz": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_20130101_csv_NA_01000.zip",
+    "telecharge_le": "2026-11-07T14:52:10+00:00",
+    "octets": 264363,
+    "sha256": "cf9cbe2a1f84597f519f268e1956a1f1b4dcc3a3bc0d718ab5d4b1739b0c9605",
+    "note": "lignes wallonnes du fichier communal, natures numériques seulement"
+  },
+  "spf_occupation_sol/communes_2014.csv.gz": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_20140101_csv_NA_01000.zip",
+    "telecharge_le": "2026-11-07T14:52:11+00:00",
+    "octets": 264632,
+    "sha256": "146bcde27cc68b58a593c4d497f36dda2793944d400efd3f9b3a6239e5c4fdf3",
+    "note": "lignes wallonnes du fichier communal, natures numériques seulement"
+  },
+  "spf_occupation_sol/communes_2015.csv.gz": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_20150101_csv_NA_01000.zip",
+    "telecharge_le": "2026-11-07T14:52:11+00:00",
+    "octets": 264892,
+    "sha256": "163a52efa5b6ccd9ae7680106c63281f318565464e9708817491af747157e89c",
+    "note": "lignes wallonnes du fichier communal, natures numériques seulement"
+  },
+  "spf_occupation_sol/communes_2016.csv.gz": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_20160101_csv_NA_01000.zip",
+    "telecharge_le": "2026-11-07T14:52:12+00:00",
+    "octets": 266311,
+    "sha256": "ee6652380a4ffb38c9b80a2ce2582c1cac13f84336fd517a8888862685dc88cd",
+    "note": "lignes wallonnes du fichier communal, natures numériques seulement"
+  },
+  "spf_occupation_sol/communes_2017.csv.gz": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_20170101_csv_NA_01000.zip",
+    "telecharge_le": "2026-11-07T14:52:12+00:00",
+    "octets": 266485,
+    "sha256": "c973ff1f3d67fb763b93ed9ed07f621171f052d082064db6a93548cebd7ec769",
+    "note": "lignes wallonnes du fichier communal, natures numériques seulement"
+  },
+  "spf_occupation_sol/communes_2018.csv.gz": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_20180101_csv_NA_01000.zip",
+    "telecharge_le": "2026-11-07T14:52:13+00:00",
+    "octets": 266789,
+    "sha256": "4b31e3054a0ff20addf18a9e1083fb23035b8f8a61644c0a607bc8476bf16d0e",
+    "note": "lignes wallonnes du fichier communal, natures numériques seulement"
+  },
+  "spf_occupation_sol/communes_2019.csv.gz": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_20190101_csv_NA_01000.zip",
+    "telecharge_le": "2026-11-07T14:52:14+00:00",
+    "octets": 266844,
+    "sha256": "13db74b09b80d6b3e5a5588200c840c7f34825980ec596300cba1863b4d22841",
+    "note": "lignes wallonnes du fichier communal, natures numériques seulement"
+  },
+  "spf_occupation_sol/communes_2020.csv.gz": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_20200101_csv_NA_01000.zip",
+    "telecharge_le": "2026-11-07T14:52:14+00:00",
+    "octets": 267256,
+    "sha256": "14b8573d1343942dadac4fac84e7987aa53a5248dc2899a9024adea29dc29c61",
+    "note": "lignes wallonnes du fichier communal, natures numériques seulement"
+  },
+  "spf_occupation_sol/communes_2021.csv.gz": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_20210101_csv_NA_01000.zip",
+    "telecharge_le": "2026-11-07T14:52:15+00:00",
+    "octets": 267588,
+    "sha256": "584af7ebf8d6b17e2193157c920ca489db04a84a73156697154f90c4a22b9655",
+    "note": "lignes wallonnes du fichier communal, natures numériques seulement"
+  },
+  "spf_occupation_sol/communes_2022.csv.gz": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_20220101_csv_NA_01000.zip",
+    "telecharge_le": "2026-11-07T14:52:15+00:00",
+    "octets": 267965,
+    "sha256": "5a3cfb286ed8cc61f39f574a4420ffa7306fe59ec4cff4fdb471869ec63d0c5d",
+    "note": "lignes wallonnes du fichier communal, natures numériques seulement"
+  },
+  "spf_occupation_sol/communes_2023.csv.gz": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_20230101_csv_NA_01000.zip",
+    "telecharge_le": "2026-11-07T14:52:16+00:00",
+    "octets": 268230,
+    "sha256": "6873698f74f2f91ecb5dbf70a073ae8b796f60f4f0cb7c2bdc160f93ae710414",
+    "note": "lignes wallonnes du fichier communal, natures numériques seulement"
+  },
+  "spf_occupation_sol/communes_2024.csv.gz": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_20240101_csv_NA_01000.zip",
+    "telecharge_le": "2026-11-07T14:52:17+00:00",
+    "octets": 268593,
+    "sha256": "2f694972da956587bbaa9ce0862201fbfcb1d1d98d6335bde9015a40b3783b27",
+    "note": "lignes wallonnes du fichier communal, natures numériques seulement"
+  },
+  "spf_occupation_sol/communes_2025.csv.gz": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_20250101_csv_NA_01000.zip",
+    "telecharge_le": "2026-11-07T14:52:17+00:00",
+    "octets": 268502,
+    "sha256": "93e90e0f707489c54c01d7fb8401cf1e77e264dbb2605c746f8e774c72df40f0",
+    "note": "lignes wallonnes du fichier communal, natures numériques seulement"
+  },
+  "spf_occupation_sol/communes_2026.csv.gz": {
+    "url": "https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_20260101_csv_NA_01000.zip",
+    "telecharge_le": "2026-11-07T14:52:18+00:00",
+    "octets": 268772,
+    "sha256": "a379ef55486cd7e74620e41fab630fbbe901819509d95219351cb29d78d3117b",
+    "note": "lignes wallonnes du fichier communal, natures numériques seulement"
+  },
+  "iweps_api/215700_0.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_0/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:20+00:00",
+    "octets": 229377,
+    "sha256": "e475ac92a1047de01b643c19017717fb4df577f6f9aafae3fb2da7bcc7a29864",
+    "note": "indicateur artif, CC0"
+  },
+  "iweps_api/215700_1.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_1/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:21+00:00",
+    "octets": 227895,
+    "sha256": "4d034562ee75723989bc6b00b4525630be047dfc654c4521ecea2c2acae44d1c",
+    "note": "indicateur resid, CC0"
+  },
+  "iweps_api/215700_2.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_2/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:21+00:00",
+    "octets": 226349,
+    "sha256": "ae3aa22221737442c43302940e2edd57980a20544d0af02ad8114379fea726fd",
+    "note": "indicateur comm, CC0"
+  },
+  "iweps_api/215700_3.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_3/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:21+00:00",
+    "octets": 226387,
+    "sha256": "742e937417eb7d5034df65652ec0e599040303843e113ebca09af89dbf2c3fe8",
+    "note": "indicateur equip, CC0"
+  },
+  "iweps_api/215700_4.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_4/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:21+00:00",
+    "octets": 226344,
+    "sha256": "953d2e0ba65986fd46debf615bc69b51d32f9da6c3b196b2d736a90a15a6f31f",
+    "note": "indicateur loisirs, CC0"
+  },
+  "iweps_api/215700_5.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_5/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:21+00:00",
+    "octets": 226350,
+    "sha256": "79e167354161917974a60d730d188396b2b4ba13fb1f9b6a65baffc0231d7f08",
+    "note": "indicateur agri_bat, CC0"
+  },
+  "iweps_api/215700_6.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_6/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:22+00:00",
+    "octets": 226390,
+    "sha256": "ba023f3815833352b0a873e9156a21cf954c3a5ea7af90dfd0bd392e58bd7475",
+    "note": "indicateur indus, CC0"
+  },
+  "iweps_api/215700_7.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_7/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:22+00:00",
+    "octets": 226371,
+    "sha256": "5efea8eccfdb40d83272520f5fb1433d1948fb35ce2690809f62a8902e0b5443",
+    "note": "indicateur carrieres, CC0"
+  },
+  "iweps_api/215700_8.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_8/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:22+00:00",
+    "octets": 226351,
+    "sha256": "1810615f9928768b1b2d8ae197e47af8903cd454a68a8c35645af4826b5e86ce",
+    "note": "indicateur transport, CC0"
+  },
+  "iweps_api/215700_9.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_9/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:22+00:00",
+    "octets": 226375,
+    "sha256": "9f6bf5c979b3de2136e45b6243ff148859e435a3526ca9ef20d43ebbc6bd844a",
+    "note": "indicateur autres_art, CC0"
+  },
+  "iweps_api/215700_10.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_10/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:22+00:00",
+    "octets": 231240,
+    "sha256": "85322e4a108a004e5f4f3e0c2acc48ed65583173b621af0793222d5370fd03a5",
+    "note": "indicateur arable, CC0"
+  },
+  "iweps_api/215700_11.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_11/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:23+00:00",
+    "octets": 231618,
+    "sha256": "f6253077a3be14dda51cf7105a2271eead18650cbf7f7abdf7d3b16e450ded27",
+    "note": "indicateur herbe, CC0"
+  },
+  "iweps_api/215700_12.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_12/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:23+00:00",
+    "octets": 229737,
+    "sha256": "9173353dc2c3ad3a019f13738f5430fcf95eb4a194a6a3cc198b6e68b86d4286",
+    "note": "indicateur foret, CC0"
+  },
+  "iweps_api/215700_13.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_13/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:23+00:00",
+    "octets": 226453,
+    "sha256": "b2a3c0010a60a9ef064935f93e8bd8337a0485db771d72c8ce797c9d57159a2b",
+    "note": "indicateur seminat, CC0"
+  },
+  "iweps_api/215700_14.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_14/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:24+00:00",
+    "octets": 226418,
+    "sha256": "48346e12fbd1e7d9bc9deec8606518872a638617ad5df78f591a1147a738b250",
+    "note": "indicateur humide, CC0"
+  },
+  "iweps_api/215700_15.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_15/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:24+00:00",
+    "octets": 226353,
+    "sha256": "69fe2e2d04bc5a7f0a944afe13cf1fd41dedfb8c2f68a8fc1701d01c0801a57d",
+    "note": "indicateur eau, CC0"
+  },
+  "iweps_api/215700_16.csv": {
+    "url": "https://opendata.iweps.be/api/data/csv/215700_16/com+period=all",
+    "telecharge_le": "2026-11-07T14:52:24+00:00",
+    "octets": 226808,
+    "sha256": "e650bb875b91426b81be91215ed012b364996eed405fb6cbd174a306578cea16",
+    "note": "indicateur inconnu, CC0"
+  }
+}
