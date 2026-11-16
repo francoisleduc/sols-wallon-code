@@ -43,9 +43,11 @@ C'est la mise à jour principale. Exemple : ajouter la situation au 1er janvier 
 | SPF Finances, occupation du sol, fichier communal | `https://opendata.fin.belgium.be/download/datasets/86999d70-51ca-11eb-9238-3448ed25ad7c_{ANNÉE}0101_csv_NA_01000.zip` | Les surfaces par nature cadastrale : la base de tous les stocks et flux |
 | IWEPS, API ouverte | `https://opendata.iweps.be/api/data/csv/215700_{0..16}/com+period=all` | La série officielle, pour le contrôle et la tuile « Chiffre de l'IWEPS » |
 | Statbel, occupation du sol (registre cadastral) | voir `STATBEL_SQLITE_URL` dans `src/artif/config.py` | Les superficies communales |
+| Statbel, population au 1er janvier | voir `POPULATION_URL` dans `src/artif/portail/parametres.py` (`TF_SOC_POP_STRUCT_{ANNÉE}.zip`) | Les habitants, pour les m² artificialisés par habitant |
 
 - Le fichier du SPF est la seule source indispensable. Tant qu'il répond 404 pour la nouvelle année, il n'y a rien à faire : la date de publication n'est pas fixe, réessayer plus tard. Au 10 janvier, le millésime de l'année n'est sans doute pas encore en ligne.
-- Si Statbel n'a pas encore publié, la chaîne reprend la dernière superficie connue (sans erreur).
+- Si Statbel n'a pas encore publié, la chaîne reprend la dernière superficie connue (sans erreur). De même pour la population : un fichier absent (404) reprend l'année précédente.
+- Si Statbel change des codes INS (comme dans le Hainaut en 2019), la chaîne s'arrête sur une population incomplète : ajouter les anciens codes à `CODES_INS_2019` dans `parametres.py` et à `ANCIENS_INS` dans `tests/audit/verifier_donnees.py`.
 
 ### 2.2 Relancer la chaîne
 
@@ -209,7 +211,7 @@ C'est un nouveau calcul, pas une simple mise à jour :
 
 La dernière fusion wallonne est Bertogne dans Bastogne, au 1er janvier 2025. Elle est gérée par `FUSIONS` dans `src/artif/portail/parametres.py`. Pour une nouvelle fusion :
 
-1. **Rattacher l'ancienne commune.** L'ajouter à `FUSIONS` (nom de l'ancienne commune, code INS de la nouvelle), et ses anciens codes INS à `IWEPS_ANCIENNES`. Faire de même dans `nom_vers_code` de `tests/audit/verifier_donnees.py`.
+1. **Rattacher l'ancienne commune.** L'ajouter à `FUSIONS` (nom de l'ancienne commune, code INS de la nouvelle), et ses anciens codes INS à `IWEPS_ANCIENNES`. Faire de même dans `nom_vers_code` et `ANCIENS_INS` de `tests/audit/verifier_donnees.py`, pour les surfaces et pour la population.
 2. **Mettre à jour les références.**
    - `references/communes_bassins_sdt.csv`, construit par `src/artif/referentiels/communes.py` depuis l'API du SPW.
    - Le fond de carte `references/geo/communes_wallonie.topojson`, refait depuis les secteurs statistiques de Statbel avec la commande de `references/geo/README.md`.

@@ -151,6 +151,36 @@ for (const langue of ['fr', 'en']) {
       }
     }
 
+    // Habitants, terres agricoles et activités : le tableau suit les données, les barres sont à la même échelle
+    const R = f.reperes, n = R.population.length - 1;
+    const rep = await p.$eval('#reperes', (s) => ({
+      texte: s.innerText,
+      lignes: [...s.querySelectorAll('tbody tr')].map((r) => [...r.children].map((c) => c.textContent)),
+      barres: [...s.querySelectorAll('.piste span')].map((x) => parseFloat(x.style.width)),
+      valeurs: [...s.querySelectorAll('dd.val')].map((x) => x.textContent),
+    })).catch(() => null);
+    ctrl('reperes', rep !== null, `${nom} section des repères absente`);
+    if (rep) {
+      ctrl('reperes', rep.lignes.length === m.annees_stock.length, `${nom} repères : ${rep.lignes.length} années`);
+      m.annees_stock.forEach((a, i) => {
+        const att = [String(a), nb(R.population[i]), nb(R.m2_habitant[i]), nb(R.agricole_ha[i], 1), nb(R.industrie_ha[i], 1), nb(R.commerce_ha[i], 1)].map(sp);
+        const lu = (rep.lignes[i] || []).map(sp);
+        ctrl('reperes', att.every((x, j) => x === lu[j]), `${nom} repères ${a} : ${lu} pour ${att}`);
+      });
+      const b = idx.bassins.find((x) => x.cle === f.bassin_cle || x.nom === f.bassin);
+      const vals = [R.m2_habitant[n], ...(f.bassin ? [b.reperes.m2_habitant[n]] : []), m.region.reperes.m2_habitant[n]];
+      ctrl('reperes', rep.valeurs.map(sp).join('|') === vals.map((v) => sp(`${nb(v)} m²`)).join('|'), `${nom} repères : barres ${rep.valeurs} pour ${vals}`);
+      const vmax = Math.max(...vals);
+      vals.forEach((v, i) => ctrl('reperes', Math.abs(rep.barres[i] - v / vmax * 100) < 0.01, `${nom} repères : largeur ${rep.barres[i]} pour ${v}`));
+      const txt = sp(rep.texte);
+      ctrl('reperes', txt.includes(sp(`${nb(R.m2_habitant[n])} m²`)) && txt.includes(sp(`${nb(R.m2_habitant[0])} m²`)), `${nom} repères : phrase par habitant`);
+      const partAgri = f.parts_estimees.arable[n] + f.parts_estimees.herbe[n];
+      ctrl('reperes', txt.includes(sp(`${nb(R.agricole_ha[n])} ha`)) && txt.includes(pc(nb(partAgri))), `${nom} repères : phrase agricole`);
+      const hausseAct = R.industrie_ha[n] - R.industrie_ha[0] + R.commerce_ha[n] - R.commerce_ha[0], hausseArtif = R.artif_ha[n] - R.artif_ha[0];
+      const partAct = hausseArtif >= 1 && hausseAct > 0 && hausseAct <= hausseArtif ? hausseAct / hausseArtif * 100 : null;
+      ctrl('reperes', partAct === null ? !/(de la hausse des terrains|of the increase in artificialised)/.test(txt) : txt.includes(pc(nb(partAct))), `${nom} repères : part des activités ${partAct}`);
+    }
+
     // Graphique des flux : chaque barre proportionnelle à son flux, du bon côté, marquée si l'année est signalée
     ctrl('graphique-barres', d.barres.length === m.annees_flux.length, `${nom} ${d.barres.length} barres`);
     const echelles = d.barres.map((x, i) => (Math.abs(f.flux[i]) > 0.5 ? x.h / Math.abs(f.flux[i]) : null)).filter((x) => x !== null).sort((a, b) => a - b);
@@ -192,6 +222,14 @@ for (const langue of ['fr', 'en']) {
       ctrl('etalement', txt.includes(pc(nb(r.centralite.neuf_ha / r.neuf_ha * 100))), `${langue} ${nom} part en centralité`);
       const bruit = (r.bruit.batiments_inverses_ha + r.bruit.abords_inverses_ha) / r.neuf_ha * 100;
       ctrl('etalement', txt.includes(pc(nb(bruit))), `${langue} ${nom} part du bruit ${nb(bruit)}`);
+      if (rep && r.neuf_ha > 0) {
+        const t = sp(rep.texte), culture = (r.avant.herbe_rotation || 0) / r.neuf_ha * 100, prairie = (r.avant.herbe_permanente || 0) / r.neuf_ha * 100;
+        // une part arrondie à zéro n'est pas citée
+        const citee = (v) => Math.round(v) === 0 || t.includes(pc(nb(v)));
+        const aucune = Math.round(culture) === 0 && Math.round(prairie) === 0;
+        ctrl('reperes', aucune ? !t.includes(sp(`${nb(r.neuf_ha, 1)} ha`) + (langue === 'en' ? ' built or paved' : ' bâtis ou revêtus'))
+          : t.includes(sp(`${nb(r.neuf_ha, 1)} ha`)) && citee(culture) && citee(prairie) && !/(^|[^\d,.])0\s?% (étaient|were)/.test(t), `${nom} repères : ce qu'il y avait en 2018`);
+      }
       const barres = await p.$$eval('#etalement .etal-barres:not(.etal-periodes) dd.val', (l) => l.map((x) => x.textContent));
       const attendues = Object.values(r.par_famille).map((v) => (v.batiments_ha + v.abords_ha) / r.neuf_ha * 100);
       ctrl('etalement', barres.length > 0 && barres.every((b) => attendues.some((a) => sp(b) === pc(nb(a)))), `${langue} ${nom} parts par zone ${barres}`);

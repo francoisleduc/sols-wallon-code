@@ -111,3 +111,22 @@ class Rythmes(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Reperes(unittest.TestCase):
+    def test_sommes_et_ratio(self):
+        idx = pd.MultiIndex.from_product([[1, 2], [2011, 2012]], names=["code_ins", "annee"])
+        st = pd.DataFrame({"artif": [10.0, 11.0, 30.0, 30.5], "arable": [50.0, 49.0, 20.0, 20.0], "herbe": [5.0, 5.0, 1.0, 0.5],
+                           "indus": [1.0, 1.5, 2.0, 2.0], "comm": [0.5, 0.5, 3.0, 3.25]}, index=idx)
+        pop = pd.Series([1000, 1100, 3000, 3000], index=idx)
+        r = calculs.reperes(st, pop, [1, 2], [2011, 2012])
+        self.assertEqual(r["population"], [4000, 4100])
+        self.assertEqual(r["artif_ha"], [40.0, 41.5])
+        self.assertAlmostEqual(r["m2_habitant"][0], 100.0)                 # 40 ha = 400 000 m² pour 4 000 habitants
+        self.assertAlmostEqual(r["m2_habitant"][1], 415000 / 4100, places=5)
+        self.assertEqual(r["agricole_ha"], [76.0, 74.5])
+        self.assertEqual(r["industrie_ha"], [3.0, 3.5])
+        self.assertEqual(r["commerce_ha"], [3.5, 3.75])
+        seule = calculs.reperes(st, pop, [1], [2012])
+        self.assertEqual(seule["population"], [1100])
+        self.assertAlmostEqual(seule["m2_habitant"][0], 100.0)

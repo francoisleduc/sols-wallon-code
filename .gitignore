@@ -1,5 +1,5 @@
 # Dépôt de la chaîne de calcul. Le site (portail/) a son propre dépôt.
-portail/
+/portail/
 
 # Données : jamais dans ce dépôt. Elles se retéléchargent à la source (voir MISE_A_JOUR.md).
 # data/raw/atol/ (ATOL-C, « All rights reserved ») et dirext_communes.geojson ne doivent jamais être redistribués.
@@ -31,3 +31,5 @@ report/latexmk.out
 CLAUDE.md
 .claude/
 references/etat_de_l_art_et_diffusion.md
+research_notes/
+reports/

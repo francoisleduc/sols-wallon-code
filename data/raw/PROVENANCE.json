@@ -2112,5 +2112,117 @@
     "octets": 6606004,
     "sha256": "ce6bb2586d467f5a6bd15a7f84305e3b4fd095e3344f2505f8f8aa98d7f1c1d6",
     "note": "SPF Finances, plan parcellaire cadastral au 1er janvier 2025, licence open data du SPF"
+  },
+  "statbel_population/TF_SOC_POP_STRUCT_2011.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2011.zip",
+    "telecharge_le": "2026-11-16T13:06:00+00:00",
+    "octets": 2438584,
+    "sha256": "63bb89a7e1218ebb997f39d268e4ae3892cff9553ceccdfa269ed0ff8189188f",
+    "note": "Statbel, population au 1er janvier 2011, CC BY 4.0"
+  },
+  "statbel_population/TF_SOC_POP_STRUCT_2012.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2012.zip",
+    "telecharge_le": "2026-11-16T13:06:20+00:00",
+    "octets": 2456039,
+    "sha256": "633abbcf1550ead1af283a7f963212d2a0d3116c620bc7ee47c2a336da18a3ec",
+    "note": "Statbel, population au 1er janvier 2012, CC BY 4.0"
+  },
+  "statbel_population/TF_SOC_POP_STRUCT_2013.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2013.zip",
+    "telecharge_le": "2026-11-16T13:06:21+00:00",
+    "octets": 2467144,
+    "sha256": "1f055e90303e0005ae913d57bd852fa30ef8b3b2e76cb3cd0b755ea115452347",
+    "note": "Statbel, population au 1er janvier 2013, CC BY 4.0"
+  },
+  "statbel_population/TF_SOC_POP_STRUCT_2014.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2014.zip",
+    "telecharge_le": "2026-11-16T13:06:22+00:00",
+    "octets": 2480491,
+    "sha256": "0cba9289a5b69ee0355c6a3a8a4f03a2f5731c849a80dc0983dffa300389dafb",
+    "note": "Statbel, population au 1er janvier 2014, CC BY 4.0"
+  },
+  "statbel_population/TF_SOC_POP_STRUCT_2015.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2015.zip",
+    "telecharge_le": "2026-11-16T13:06:24+00:00",
+    "octets": 2494960,
+    "sha256": "1801094888ea2b277e10813dd12eafd52e36d6bfc6f03ce19e8e6076195d4fc7",
+    "note": "Statbel, population au 1er janvier 2015, CC BY 4.0"
+  },
+  "statbel_population/TF_SOC_POP_STRUCT_2016.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2016.zip",
+    "telecharge_le": "2026-11-16T13:06:25+00:00",
+    "octets": 2503592,
+    "sha256": "1badcd400e1979f3a4ec8409ea83ae30815cc66318affaea4d04e331acad3502",
+    "note": "Statbel, population au 1er janvier 2016, CC BY 4.0"
+  },
+  "statbel_population/TF_SOC_POP_STRUCT_2017.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2017.zip",
+    "telecharge_le": "2026-11-16T13:06:26+00:00",
+    "octets": 2922917,
+    "sha256": "6c2e3937d608d486b5100669b60c4bd92b561f3a1cc01e1adb627156632bd5b2",
+    "note": "Statbel, population au 1er janvier 2017, CC BY 4.0"
+  },
+  "statbel_population/TF_SOC_POP_STRUCT_2018.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2018.zip",
+    "telecharge_le": "2026-11-16T13:06:27+00:00",
+    "octets": 2935072,
+    "sha256": "ae17f7a78565d4654de39139e3d997db088f4873871509d9fbdf40281b65b330",
+    "note": "Statbel, population au 1er janvier 2018, CC BY 4.0"
+  },
+  "statbel_population/TF_SOC_POP_STRUCT_2019.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2019.zip",
+    "telecharge_le": "2026-11-16T13:06:29+00:00",
+    "octets": 2517394,
+    "sha256": "902f28739b1f7c219d3aa75c9a5f5220ced7d9ab19358fd166913a184ee41e09",
+    "note": "Statbel, population au 1er janvier 2019, CC BY 4.0"
+  },
+  "statbel_population/TF_SOC_POP_STRUCT_2020.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2020.zip",
+    "telecharge_le": "2026-11-16T13:06:30+00:00",
+    "octets": 2527989,
+    "sha256": "71b78d168c4b98ae5405af1f2f29efde2deacdc147bc8b20bc9d8f126a39bc26",
+    "note": "Statbel, population au 1er janvier 2020, CC BY 4.0"
+  },
+  "statbel_population/TF_SOC_POP_STRUCT_2021.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2021.zip",
+    "telecharge_le": "2026-11-16T13:06:31+00:00",
+    "octets": 2540785,
+    "sha256": "ca1005e07307112b6113062c7f27e5263804d8f58f7b1a018468242289b7c24a",
+    "note": "Statbel, population au 1er janvier 2021, CC BY 4.0"
+  },
+  "statbel_population/TF_SOC_POP_STRUCT_2022.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2022.zip",
+    "telecharge_le": "2026-11-16T13:06:32+00:00",
+    "octets": 2573610,
+    "sha256": "6071b25c8cd73ffa054cea2570c34926c7e5c031065a8ee042eb87cee7248bb1",
+    "note": "Statbel, population au 1er janvier 2022, CC BY 4.0"
+  },
+  "statbel_population/TF_SOC_POP_STRUCT_2023.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2023.zip",
+    "telecharge_le": "2026-11-16T13:06:48+00:00",
+    "octets": 2592076,
+    "sha256": "8d62d67601852be3c4017b0414499526177475a444424ec4a89d271319b2feaf",
+    "note": "Statbel, population au 1er janvier 2023, CC BY 4.0"
+  },
+  "statbel_population/TF_SOC_POP_STRUCT_2024.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2024.zip",
+    "telecharge_le": "2026-11-16T13:06:49+00:00",
+    "octets": 2582951,
+    "sha256": "bff2d726685ca0ddc4550ced282cfbe86971afe4289f2f832ed6e4fef85787a4",
+    "note": "Statbel, population au 1er janvier 2024, CC BY 4.0"
+  },
+  "statbel_population/TF_SOC_POP_STRUCT_2025.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2025.zip",
+    "telecharge_le": "2026-11-16T13:06:50+00:00",
+    "octets": 2551751,
+    "sha256": "33910ea36437e39cfffd82ad82c759a2a8d1f2ab7662d45ce71c8ec9f336716c",
+    "note": "Statbel, population au 1er janvier 2025, CC BY 4.0"
+  },
+  "statbel_population/TF_SOC_POP_STRUCT_2026.zip": {
+    "url": "https://statbel.fgov.be/sites/default/files/files/opendata/bevolking%20naar%20woonplaats%2C%20nationaliteit%20burgelijke%20staat%20%2C%20leeftijd%20en%20geslacht/TF_SOC_POP_STRUCT_2026.zip",
+    "telecharge_le": "2026-11-16T13:06:50+00:00",
+    "octets": 2566901,
+    "sha256": "5d7e3842fe442c086243f850f5a75d72cfbac9330738fd77b5e259cab75b4b9d",
+    "note": "Statbel, population au 1er janvier 2026, CC BY 4.0"
   }
 }

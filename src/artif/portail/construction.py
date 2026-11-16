@@ -3,7 +3,7 @@
 Sources :
 - SPF Finances, « Occupation du sol », fichiers communaux (CC BY 4.0) ;
 - IWEPS, API ouverte, indicateurs 215700_0 à 215700_16 (CC0) ;
-- Statbel, superficies communales et limites des secteurs statistiques (CC BY 4.0) ;
+- Statbel, superficies communales, population au 1er janvier et limites des secteurs statistiques (CC BY 4.0) ;
 - SDT 2024, références par bassin lues sur les graphiques.
 
 Étapes : `calcule()` lit les sources et fait les calculs, `construit()` assemble les fiches communales, les bassins
@@ -41,6 +41,7 @@ class Donnees:
     reclass: dict              # {(commune, année): reclassement probable}
     types: pd.DataFrame        # signalement de chaque année communale
     flux_n: pd.DataFrame       # flux corrigé des signalements
+    pop: pd.Series             # habitants au 1er janvier, index (commune, année)
 
     @property
     def annees_flux(self) -> list[int]:
@@ -87,7 +88,8 @@ def calcule(refresh: bool = False, zips: Path | None = None) -> Donnees:
     flux = calculs.flux_annuels(st["artif"].unstack(0).sort_index())
     reclass = calculs.reclassements(spf, flux, table)
     types, flux_n = calculs.verifications(flux, reclass)
-    return Donnees(communes, table, annees, spf, iw, sup, st, flux, reclass, types, flux_n)
+    pop = acquisition.population(annees, refresh)
+    return Donnees(communes, table, annees, spf, iw, sup, st, flux, reclass, types, flux_n, pop)
 
 
 def _cle_bassin(nom: str) -> str:
@@ -128,6 +130,7 @@ def _fiche(code: int, d: Donnees, stats: dict, medianes: pd.Series, flux_bassin_
         "parts_estimees": {k: [round(float(s.loc[y, k] / a[y] * 100), PRECISION_PARTS) for y in d.annees] for k in CATEGORIES + ["artif"]},
         "parts_iweps": {k: [round(float(iw_c.loc[y, k]), 2) for y in d.annees_iweps] for k in IWEPS_ORDRE} if iw_c is not None else None,
         "ha_estimes": {k: round(float(s.loc[d.der, k]), PRECISION_HA) for k in CATEGORIES + ["artif"]},
+        "reperes": calculs.reperes(d.st, d.pop, [code], d.annees),
     }
     c["phrases"] = textes.phrases(c, stats)
     return c
@@ -152,6 +155,7 @@ def _bassins(d: Donnees, fiches: dict) -> tuple[list[dict], dict]:
         membres = d.communes.index[d.communes["bassin"] == nom]
         b = calculs.bilan_bassin(nom, _cle_bassin(nom), float(ref.loc[nom, "artif_nette_moy_10ans_ha_an"]),
                                  float(ref.loc[nom, "incertitude_lecture_ha_an"]), d.flux.loc[membres], d.flux_n.loc[membres])
+        b["reperes"] = calculs.reperes(d.st, d.pop, membres, d.annees)
         b["communes"] = sorted(
             ({"code": int(k), "nom": fiches[k]["nom"], "rythme": arrondi(d.flux.loc[k, d.recent].mean()), "cumul": arrondi(d.flux.loc[k, d.recent].sum()),
               "part": arrondi(d.parts[k]), "saut": bool(fiches[k]["sauts"] or fiches[k]["reclassements"])} for k in membres),
@@ -233,6 +237,7 @@ def construit(refresh: bool = False, zips: Path | None = None) -> dict:
         "flux": [round(float(d.flux[a].sum()), PRECISION_HA) for a in d.annees_flux],
         "stock": arrondi(d.stock.loc[d.der].sum(), 0), "superficie": arrondi(sup_der.sum(), 0),
         "part": arrondi(d.stock.loc[d.der].sum() / sup_der.sum() * 100),
+        "reperes": calculs.reperes(d.st, d.pop, list(d.communes.index), d.annees),
     }
     meta = {
         "annees_stock": d.annees, "annees_flux": d.annees_flux, "annees_iweps": d.annees_iweps,
@@ -245,6 +250,6 @@ def construit(refresh: bool = False, zips: Path | None = None) -> dict:
     }
 
     export.ecrit_site({"meta": meta, "communes": lignes, "bassins": bassins, "wallonie": wallonie}, fiches)
-    export.ecrit_telechargements(d.st, d.flux, d.flux_n, d.types, d.reclass, d.communes, bassins + [wallonie])
+    export.ecrit_telechargements(d.st, d.flux, d.flux_n, d.types, d.reclass, d.communes, bassins + [wallonie], d.pop)
     return {"meta": meta, "fiches": fiches, "bassins": bassins, "wallonie": wallonie, "st": d.st, "iw": d.iw,
             "flux": d.flux, "flux_n": d.flux_n, "types": d.types, "reclass": d.reclass}

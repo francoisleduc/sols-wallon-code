@@ -18,6 +18,7 @@ import re
 import statistics as st
 import sys
 import unicodedata
+import zipfile
 from collections import defaultdict
 from decimal import ROUND_HALF_UP, Decimal
 from pathlib import Path
@@ -479,6 +480,58 @@ for i, y in enumerate(FL):
     proche("bassins", reg["flux"][i], sum(flux[c][y] for c in ref), TOL_HA, f"région flux {y}")
 proche("bassins", reg["part"], sum(stock[(c, DER)]["artif"] for c in ref) / sum(sup[(c, DER)] for c in ref) * 100, .051, "région part")
 
+# --- Habitants, terres agricoles et activités économiques --------------------
+# Population au 1er janvier, lue ligne à ligne dans les fichiers de Statbel. Les codes INS du Hainaut ont changé le
+# 1er janvier 2019 ; Bastogne et Bertogne ne font plus qu'une commune depuis 2025.
+ANCIENS_INS = {52043: 55086, 52063: 55085, 54007: 57096, 54010: 57097, 55010: 51067, 55022: 58001, 55023: 51069,
+               55039: 51068, 56011: 58002, 56085: 58003, 56087: 58004, 82003: 82039, 82005: 82039}
+pop = defaultdict(int)
+for an in ANS:
+    chemin = Path(f"data/raw/statbel_population/TF_SOC_POP_STRUCT_{an}.zip")
+    if not chemin.exists():  # année pas encore publiée : la dernière connue est reprise
+        for c in ref:
+            pop[(c, an)] = pop[(c, an - 1)]
+        continue
+    with zipfile.ZipFile(chemin) as z:
+        nom = next(x for x in z.namelist() if x.lower().endswith((".txt", ".csv")))
+        lignes = csv.reader((l.decode("utf-8", "replace") for l in z.open(nom)), delimiter="|")
+        tete = [x.lstrip("﻿") for x in next(lignes)]
+        i_code = next(i for i, x in enumerate(tete) if x in ("CD_MUNTY_REFNIS", "CD_REFNIS"))
+        i_pop = tete.index("MS_POPULATION")
+        hors = set()
+        for l in lignes:
+            c = int(l[i_code])
+            if not (25000 <= c < 30000 or 50000 <= c < 70000 or c >= 80000):
+                continue
+            c = ANCIENS_INS.get(c, c)
+            if c not in ref:
+                hors.add(c)
+                continue
+            pop[(c, an)] += int(l[i_pop])
+    ctrl("population", not hors, f"{an} : codes INS wallons inconnus {sorted(hors)[:5]}")
+    ctrl("population", all(pop[(c, an)] > 0 for c in ref), f"{an} : commune sans habitant")
+total_der = sum(pop[(c, DER)] for c in ref)
+ctrl("population", 3_400_000 < total_der < 4_000_000, f"Wallonie {DER} : {total_der} habitants, hors de la plage plausible")
+
+
+def verifie_reperes(R, membres, n):
+    for i, an in enumerate(ANS):
+        p = sum(pop[(c, an)] for c in membres)
+        s = {k: sum(stock[(c, an)][k] for c in membres) for k in ("artif", "arable", "herbe", "indus", "comm")}
+        ctrl("population", R["population"][i] == p, f"{n} habitants {an} : {R['population'][i]} au lieu de {p}")
+        proche("population", R["m2_habitant"][i], s["artif"] * 1e4 / p, 1e-5, f"{n} m² par habitant {an}")
+        proche("stocks", R["artif_ha"][i], s["artif"], TOL_HA * len(membres), f"{n} artificialisé {an}")
+        proche("stocks", R["agricole_ha"][i], s["arable"] + s["herbe"], TOL_HA * len(membres), f"{n} agricole {an}")
+        proche("stocks", R["industrie_ha"][i], s["indus"], TOL_HA * len(membres), f"{n} industrie {an}")
+        proche("stocks", R["commerce_ha"][i], s["comm"], TOL_HA * len(membres), f"{n} commerces {an}")
+
+
+for c, f in fiches.items():
+    verifie_reperes(f["reperes"], [c], f["nom"])
+for b in idx["bassins"]:
+    verifie_reperes(b["reperes"], par_bassin[b["nom"]], b["nom"])
+verifie_reperes(reg["reperes"], list(ref), "Wallonie")
+
 # --- Exemple de la Méthode --------------------------------------------------
 e = idx["meta"]["exemple"]
 c = e["code"]
@@ -505,6 +558,13 @@ for r in csv.DictReader(open(d + "flux_par_commune.csv", encoding="utf-8-sig")):
     proche("telechargements", float(r["flux_net_ha"]), flux[k][y], .0051, f"flux {k} {y}")
     proche("telechargements", float(r["flux_corrige_ha"]), corr[k][y], .0051, f"flux corrigé {k} {y}")
     ctrl("telechargements", (r["signalement"] or "") == types[k][y], f"signalement {k} {y}")
+lignes_h = list(csv.DictReader(open(d + "habitants_par_commune.csv", encoding="utf-8-sig")))
+ctrl("telechargements", len(lignes_h) == len(ref) * len(ANS), f"habitants : {len(lignes_h)} lignes")
+for r in lignes_h:
+    k = (int(r["code_ins"]), int(r["annee_1er_janvier"]))
+    ctrl("telechargements", int(r["habitants"]) == pop[k] and r["commune"] == ref[k[0]]["commune"], f"habitants {k}")
+    proche("telechargements", float(r["artificialise_ha"]), stock[k]["artif"], .0051, f"artificialisé {k}")
+    proche("telechargements", float(r["m2_artificialises_par_habitant"]), stock[k]["artif"] * 1e4 / pop[k], .051, f"m² par habitant {k}")
 for r in csv.DictReader(open(d + "stocks_par_commune.csv", encoding="utf-8-sig")):
     proche("telechargements", float(r["hectares"]), stock[(int(r["code_ins"]), int(r["annee_1er_janvier"]))][r["categorie"]], .0051, f"stock {r['code_ins']} {r['categorie']}")
 

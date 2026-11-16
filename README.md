@@ -48,7 +48,7 @@ Pour régénérer les données :
 .venv/Scripts/python.exe -X utf8 src/construire_portail.py --refresh
 ```
 
-- La commande retélécharge l'IWEPS et cherche un nouveau millésime au SPF Finances. Sans `--refresh`, elle réutilise le cache `data/raw/`.
+- La commande retélécharge l'IWEPS, cherche un nouveau millésime au SPF Finances et la population de chaque année chez Statbel. Sans `--refresh`, elle réutilise le cache `data/raw/`.
 - **Ajouter une année :** relancer avec `--refresh`. Si une nature cadastrale inconnue apparaît, la chaîne s'arrête : il faut la classer dans `references/test_spf_iweps/table_natures_categories.csv`.
 - La commande écrit `portail/data/` et s'arrête en erreur si un contrôle échoue (261 communes, phrases complètes, somme des catégories, écart avec l'IWEPS d'au plus 0,05 point) ou si l'audit `tests/audit/verifier_donnees.py` trouve un écart.
 - **Arrondis :** les données gardent la précision et chaque chiffre n'est arrondi qu'une fois, à l'affichage (`arrondi` dans `src/artif/portail/nombres.py`, avec la même règle que le navigateur).
