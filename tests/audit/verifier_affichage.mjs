@@ -74,12 +74,18 @@ for (const langue of ['fr', 'en']) {
     await p.evaluate((x) => { location.hash = 'commune-' + x; }, co.code);
     await p.waitForFunction((nom) => document.querySelector('h1')?.innerText.toUpperCase() === nom.toUpperCase(), co.nom, { timeout: 8000 });
     await p.waitForSelector('.graphique svg rect.barre');
+    // La courbe des parts n'est dessinée qu'une fois son panneau affiché : on l'affiche, puis on revient aux hectares
+    await p.click('#evolution .bascule button:nth-child(2)');
+    await p.waitForSelector('#panneau-part svg polyline');
+    await p.click('#evolution .bascule button:nth-child(1)');
     const d = await p.evaluate(() => {
       const t = (e) => (e ? e.textContent : '');
       const svgs = [...document.querySelectorAll('.graphique svg')];
       const bar = svgs.find((s) => s.querySelector('rect.barre'));
       return {
         tuiles: [...document.querySelectorAll('.tuiles > div, .tuiles .tuile')].map((x) => t(x.querySelector('dd'))),
+        petits: [...document.querySelectorAll('.tuiles > div')].map((x) => t(x.querySelector('small'))),
+        voisines: [...document.querySelectorAll('.voisines a')].map((a) => [t(a.querySelector('span')), t(a.querySelector('b')), a.getAttribute('href')]),
         tables: [...document.querySelectorAll('#vue table')].map((tb) => [...tb.querySelectorAll('tbody tr')].map((r) => [...r.children].map((c) => c.textContent))),
         phrases: [...document.querySelectorAll('.retenir li')].map((x) => x.textContent),
         legendes: [...document.querySelectorAll('.legende li')].map((x) => x.textContent),
@@ -95,22 +101,28 @@ for (const langue of ['fr', 'en']) {
     // Tuiles et phrases
     const dd = d.tuiles.map(sp);
     const hectaresAn = (v) => sp(`${v} ${langue === 'en' ? 'ha/yr' : 'ha/an'}`);
-    ctrl('tuiles', dd.length === (f.part_iweps !== null ? 4 : 3), `${nom} ${dd.length} tuiles`);
+    // Chiffres clés : part (avec l'IWEPS en petit), rythme récent, m² par habitant, puis la surface vue du ciel si la commune est calculée
+    const avecEtalement = ((m.etalement && m.etalement.communes) || []).some((x) => x.code === co.code);
+    const Rn = f.reperes.population.length - 1;
+    ctrl('tuiles', dd.length === 3 + (avecEtalement ? 1 : 0), `${nom} ${dd.length} tuiles`);
     ctrl('tuiles', dd[0] === pc(nb(f.part, 1)), `${nom} part ${dd[0]} pour ${f.part}`);
-    if (f.part_iweps !== null) ctrl('tuiles', dd[1] === pc(nb(f.part_iweps, 1)), `${nom} IWEPS ${dd[1]}`);
+    if (f.part_iweps !== null) ctrl('tuiles', sp(d.petits[0]).includes(pc(nb(f.part_iweps, 1))), `${nom} IWEPS ${d.petits[0]}`);
+    else ctrl('tuiles', !/IWEPS/.test(d.petits[0]), `${nom} IWEPS inattendu ${d.petits[0]}`);
     const med = f.mediane_bassin !== null ? f.mediane_bassin : m.stats.mediane_wallonie;
-    ctrl('tuiles', dd.includes(pc(nb(med, 1))), `${nom} médiane ${med} absente de ${dd}`);
-    ctrl('tuiles', dd.at(-1) === hectaresAn(nb(f.rythme_recent, 1)), `${nom} rythme ${dd.at(-1)}`);
-    const attendues = f.phrases.map((x) => sp(langue === 'en' ? x.texte_en : x.texte));
+    ctrl('tuiles', dd[1] === hectaresAn(nb(f.rythme_recent, 1)), `${nom} rythme ${dd[1]}`);
+    ctrl('tuiles', dd[2] === sp(`${nb(f.reperes.m2_habitant[Rn])} m²`), `${nom} m² par habitant ${dd[2]}`);
+    const toutes = f.phrases.map((x) => sp(langue === 'en' ? x.texte_en : x.texte));
+    // « En bref » reprend les phrases, sauf la première (la part), déjà dans les chiffres clés
+    const attendues = f.phrases.filter((x) => x.regle !== 'part').map((x) => sp(langue === 'en' ? x.texte_en : x.texte));
     ctrl('phrases', JSON.stringify(d.phrases.map(sp)) === JSON.stringify(attendues), `${nom} phrases différentes des données`);
 
     // Un même chiffre, le même à chaque endroit de la fiche
     parts[co.code] = dd[0];
-    const debut = attendues[0].match(langue === 'en' ? /^[\d.]+%/ : /^[\d,]+ %/)?.[0];
+    const debut = toutes[0].match(langue === 'en' ? /^[\d.]+%/ : /^[\d,]+ %/)?.[0];
     ctrl('coherence-fiche', debut === dd[0], `${nom} part : tuile ${dd[0]}, phrase ${debut}`);
     const rythme = attendues.find((x) => /ha\/(an|yr)/.test(x) && /(rythme récent|recent pace)/i.test(x));
     const [, recentPhrase, passePhrase] = rythme.match(langue === 'en' ? /is (−?[\d.,]+) ha\/yr .*?against (−?[\d.,]+) ha\/yr/ : /de (−?[\d,  ]+) ha\/an .*?contre (−?[\d,  ]+) ha\/an/);
-    if (Math.abs(f.rythme_recent) < 100) ctrl('coherence-fiche', hectaresAn(recentPhrase) === dd.at(-1), `${nom} rythme : tuile ${dd.at(-1)}, phrase ${recentPhrase}`);
+    if (Math.abs(f.rythme_recent) < 100) ctrl('coherence-fiche', hectaresAn(recentPhrase) === dd[1], `${nom} rythme : tuile ${dd[1]}, phrase ${recentPhrase}`);
     if (Math.abs(f.rythme_passe) < 100) ctrl('coherence-fiche', d.legendes.some((l) => sp(l).includes(`2011-2019`) && sp(l).endsWith(hectaresAn(passePhrase))), `${nom} rythme passé : phrase ${passePhrase} absente de la légende`);
     ctrl('coherence-fiche', attendues.some((x) => x.includes(pc(nb(med, 1)))), `${nom} médiane : tuile et phrase`);
     const compo = attendues.find((x) => /(cette part|this share)/i.test(x));
@@ -136,7 +148,7 @@ for (const langue of ['fr', 'en']) {
       const lu = tableCategories[i].map(sp);
       ctrl('tableau-categories', att.every((x, j) => x === null || x === lu[j]), `${nom} ${k} : ${lu} pour ${att}`);
     });
-    const tableFlux = d.tables[1], tableVoisins = d.tables.at(-1);   // les voisins sont toujours le dernier tableau (la section de l'étalement en ajoute un)
+    const tableFlux = d.tables[1], tableVoisins = d.voisines;
     ctrl('tableau-flux', tableFlux.length === m.annees_flux.length, `${nom} ${tableFlux.length} années`);
     m.annees_flux.forEach((a, i) => {
       ctrl('tableau-flux', tableFlux[i][0].startsWith(String(a)) && sp(tableFlux[i][1]) === sp(sg(f.flux[i], 2)), `${nom} ${a} ${tableFlux[i]} pour ${f.flux[i]}`);
@@ -144,10 +156,10 @@ for (const langue of ['fr', 'en']) {
       ctrl('tableau-flux', /reclass/i.test(tableFlux[i][0]) === reclass && /vérifier|to check/i.test(tableFlux[i][0]) === saut, `${nom} ${a} libellé ${tableFlux[i][0]}`);
     });
     if (f.voisins.length) {
-      ctrl('tableau-voisins', tableVoisins && tableVoisins.length === f.voisins.length, `${nom} voisins`);
+      ctrl('tableau-voisins', tableVoisins.length === f.voisins.length, `${nom} voisins`);
       for (const v of f.voisins) {
         const l = tableVoisins.find((r) => r[0] === v.nom);
-        ctrl('tableau-voisins', l && sp(l[1]) === pc(nb(v.part, 1)), `${nom} voisin ${v.nom} ${l} pour ${v.part}`);
+        ctrl('tableau-voisins', l && sp(l[1]) === pc(nb(v.part, 1)) && l[2] === `#commune-${v.code}`, `${nom} voisin ${v.nom} ${l} pour ${v.part}`);
       }
     }
 
@@ -208,13 +220,14 @@ for (const langue of ['fr', 'en']) {
     }
 
     // Étalement vu du ciel : seulement sur les communes calculées, avec les chiffres de leur fichier
-    const avecEtalement = ((m.etalement && m.etalement.communes) || []).some((x) => x.code === co.code);
     if (!avecEtalement) ctrl('etalement', !(await p.$('#etalement')), `${nom} section étalement inattendue`);
     else {
       await p.waitForSelector('#etalement .etal-tache');
       const e = await (await p.request.get(`${base}data/etalement/${co.code}.json`)).json();
       const r = e.resume;
-      const txt = sp(await p.$eval('#etalement', (x) => x.innerText));
+      // textContent : une partie des chiffres est dans les détails repliés
+      const txt = sp(await p.$eval('#etalement', (x) => x.textContent));
+      ctrl('tuiles', dd[3] === sp(`${nb(r.neuf_ha, 1)} ha`), `${nom} vu du ciel ${dd[3]} pour ${r.neuf_ha}`);
       ctrl('etalement', (await p.$$eval('#etalement .etal-tache', (l) => l.length)) === e.taches.length, `${nom} nombre de taches`);
       for (const [cle, v] of [['bâtiments', r.batiments_ha], ['abords', r.abords_ha], ['neuf', r.neuf_ha], ['cadastre', r.flux_cadastre.ha]]) {
         ctrl('etalement', txt.includes(sp(nb(v, 1)) + ' ha'), `${langue} ${nom} ${cle} ${nb(v, 1)} ha absent`);
